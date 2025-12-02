@@ -5,10 +5,14 @@ body {
     background-color: #FFE4EF;
 }
 
-
 /*-----------------------------------
 h1 female perspective + logo
 -----------------------------------*/
+.image-logo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
 h1 a {
     display: flex;
     justify-content: center;
@@ -19,7 +23,6 @@ h1 a {
     font-weight: lighter;
     margin: 1cm;
     cursor: pointer;
-    padding: 0;
 }
 
 /*-----------------------------------

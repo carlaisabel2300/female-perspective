@@ -1,0 +1,62 @@
+/*-----------------------------------
+hele siden
+ -----------------------------------*/
+body {
+    background-color: #FFE4EF;
+}
+
+/*-----------------------------------
+header punkter
+ -----------------------------------*/
+header {
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    padding: 2cm;
+    margin: 0;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #4B2E2A;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/*to make the "active" tag bold when on that specific page*/
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+/*-----------------------------------
+header punkter
+ -----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.timeline-header {
+    text-align: center;
+    padding: 1.4rem 0;
+    background-color: whitesmoke;
+    font-weight: 600;
+}

@@ -5,6 +5,23 @@ body {
     background-color: #FFE4EF;
 }
 
+
+/*-----------------------------------
+h1 female perspective + logo
+-----------------------------------*/
+h1 a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: red;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 1cm;
+    cursor: pointer;
+    padding: 0;
+}
+
 /*-----------------------------------
 header punkter
  -----------------------------------*/
@@ -19,7 +36,7 @@ nav ul {
     justify-content: space-evenly;
     flex-direction: row;
     list-style: none;
-    padding: 2cm;
+    padding: 1cm;
     margin: 0;
 }
 

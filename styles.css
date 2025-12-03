@@ -156,7 +156,7 @@ info.html styling
     bottom: 0;
     left: 50%;
     width: 4px;
-    background: #fff;
+    background: rgba(217, 221, 255);
     transform: translateX(-50%);
 }
 
@@ -183,8 +183,8 @@ info.html styling
     top: 28px;
     width: 22px;
     height: 22px;
-    background: #FFE4EF;
-    border: 4px solid #FF8DAA;
+    background: rgb(0, 56, 168);
+    border: 4px solid rgb(0, 56, 168);
     border-radius: 50%;
     z-index: 10;
     left: calc(100% - 10px);
@@ -201,7 +201,7 @@ info.html styling
 .timeline li p,
 .timeline li small,
 .timeline li .title {
-    background: #fff;
+    background: rgba(217, 221, 255);
     padding: 18px 22px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -215,7 +215,7 @@ info.html styling
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
-    background: #FF8DAA;
+    background: rgb(0, 56, 168);;
     color: white;
 }
 

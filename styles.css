@@ -198,27 +198,42 @@ info.html styling
 
 /* Content box styling */
 .timeline li h3,
-.timeline li p,
-.timeline li small,
-.timeline li .title {
+.timeline li p {
     background: rgba(217, 221, 255);
     padding: 18px 22px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #4B2E2A;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 }
 
-/* Title label */
+.timeline li small {
+    display: inline-block;
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
+}
+    /* Title label */
 .timeline li .title {
+    display: inline-block;
+    background: rgb(0, 56, 168);
+    color: rgba(217, 221, 255);
+    padding: 30px 48px;
+    border-radius: 8px;
+    margin-bottom: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 25px;
     letter-spacing: 1px;
-    background: rgb(0, 56, 168);;
-    color: white;
 }
 
+.title {
+    margin-bottom: 20px;
+}
 /* Close button */
 .close {
     display: inline-block;

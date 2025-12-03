@@ -131,7 +131,7 @@ info.html styling
 }
 
 /* ------------------------------
-   TIMELINE (MATCHER DIT DESIGN)
+   TIMELINE
    ------------------------------ */
 
 .timeline-wrapper {
@@ -217,6 +217,15 @@ info.html styling
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 
 }
+
+/* For at lukke p boksen - Dette er "klik for at lukke" tekst. - Skjult som standard, hvis du ønsker det */
+.bio.hidden {
+    display: none;
+}
+.close {
+    font-weight: bold;
+}
+
     /* Title label */
 .timeline li .title {
     display: inline-block;

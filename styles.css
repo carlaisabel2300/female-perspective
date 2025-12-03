@@ -91,6 +91,7 @@ info.html styling
     display: flex;
     justify-content: center;
     padding-top: 25px;
+    color: #4B2E2A;
 }
 .circle-container {
     display: flex;
@@ -105,14 +106,22 @@ info.html styling
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid;
     border-radius: 50%;
     height: 80px;
     width: 80px;
     padding: 120px;
+    border-radius: 50%;
+    background-color: rgba(129, 177, 234, 0.76);
+    color: #4B2E2A;
+
 
 }
 .circle-container1 h4,
 .circle-container5 h4 {
     white-space: nowrap;
+}
+
+.circle-container :hover{
+    transform: scale(1.10);
+    background-color: rgba(129, 177, 234, 0.42);
 }

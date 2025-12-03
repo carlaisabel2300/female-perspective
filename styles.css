@@ -10,9 +10,10 @@ h1 female perspective + logo
 -----------------------------------*/
 .image-logo {
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 h1 a {
     display: flex;
@@ -22,8 +23,10 @@ h1 a {
     font-family: "Snell Roundhand", cursive;
     font-size: 50px;
     font-weight: lighter;
-    margin: 1cm;
     cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /*-----------------------------------

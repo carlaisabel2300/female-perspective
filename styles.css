@@ -101,6 +101,7 @@ info.html styling
 
 
 }
+
 .circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5{
     flex-direction: column;
     display: flex;
@@ -113,12 +114,15 @@ info.html styling
     border-radius: 50%;
     background-color: rgba(129, 177, 234, 0.76);
     color: #4B2E2A;
+    white-space: nowrap;
 
 
 }
-.circle-container1 h4,
-.circle-container5 h4 {
-    white-space: nowrap;
+
+.circle-container h5 {
+   font-style: italic;
+    margin-top: 10px;
+    color: rgba(75, 46, 42, 0.7);
 }
 
 .circle-container :hover{

@@ -125,7 +125,7 @@ info.html styling
     color: rgba(0, 56, 168, 0.56);
 }
 
-.circle-container :hover{
+.circle-container div:hover{
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }

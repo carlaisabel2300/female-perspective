@@ -117,6 +117,7 @@ info.html styling
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
     white-space: nowrap;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 
 
 }
@@ -171,9 +172,8 @@ info.html styling
 }
 
 .timeline-img {
-    width: 140px;
-    border-radius: 10px;
-    flex-shrink: 0;
+    max-width: 200px;
+    max-height: 400px;
 }
 
 .text-box {
@@ -224,7 +224,6 @@ info.html styling
 }
 
 .timeline li small {
-    display: inline-block;
     background: rgba(217, 221, 255);
     padding: 18px 22px;
     border-radius: 10px;
@@ -234,9 +233,9 @@ info.html styling
 
 }
 
-    /* Title label */
+/* Title label */
 .timeline li .title {
-    display: inline-block;
+    display: flex;
     background: rgb(0, 56, 168);
     color: rgba(217, 221, 255);
     padding: 30px 48px;
@@ -246,20 +245,15 @@ info.html styling
     text-transform: uppercase;
     font-size: 25px;
     letter-spacing: 1px;
+    width: 350px;
+    height: 100px;
 }
 
 .title {
     margin-bottom: 20px;
 }
 
-/* Close button */
-.close {
-    display: inline-block;
-    margin-top: 5px;
-    font-size: 13px;
-    color: #4B2E2A;
-    cursor: pointer;
-}
+
 /* Billede + titel i samme række */
 .title-row {
     display: flex;
@@ -271,8 +265,6 @@ info.html styling
 .title-row .timeline-img {
     width: 85px;
     height: auto;
-    border-radius: 10px;
-    flex-shrink: 0;
 }
 
 
@@ -302,7 +294,7 @@ info.html styling
     margin-left: 50px;
     font-size: 12px;
     text-transform: uppercase;
-
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
     }
 
 

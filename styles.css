@@ -37,6 +37,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #FFE4EF;
+    z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
 }
 
 nav ul {
@@ -163,9 +164,26 @@ info.html styling
 
 /* Each item */
 .timeline li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
     width: 50%;
     padding: 25px 45px;
     position: relative;
+}
+
+.timeline-img {
+    width: 140px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
 }
 
 /* Alternate layout */
@@ -219,14 +237,6 @@ info.html styling
 
 }
 
-/* For at lukke p boksen - Dette er "klik for at lukke" tekst. - Skjult som standard, hvis du ønsker det */
-.bio.hidden {
-    display: none;
-}
-.close {
-    font-weight: bold;
-}
-
     /* Title label */
 .timeline li .title {
     display: inline-block;
@@ -253,6 +263,7 @@ info.html styling
     color: #4B2E2A;
     cursor: pointer;
 }
+
 
 
 /* ------------------------------

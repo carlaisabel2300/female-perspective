@@ -131,7 +131,6 @@ info.html styling
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
-
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -182,6 +181,142 @@ info.html styling
     gap: 15px;
     flex: 1;
 }
+
+/* Alternate layout */
+.timeline li:nth-child(odd) {
+    left: 0;
+}
+
+.timeline li:nth-child(even) {
+    left: 50%;
+}
+
+/* Circle marker */
+.timeline li::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    height: 22px;
+    background: rgb(0, 56, 168);
+    border: 4px solid rgb(0, 56, 168);
+    border-radius: 50%;
+    z-index: 10;
+    left: calc(100% - 10px);
+    transform: translateX(-50%);
+}
+
+/* Move circle for even items */
+.timeline li:nth-child(even)::before {
+    left: -10px;
+}
+
+/* Content box styling */
+.timeline li h3,
+.timeline li p {
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.timeline li small {
+    display: inline-block;
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
+}
+
+/* Title label */
+.timeline li .title {
+    display: inline-block;
+    background: rgb(0, 56, 168);
+    color: rgba(217, 221, 255);
+    padding: 30px 48px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+/* Close button */
+.close {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #4B2E2A;
+    cursor: pointer;
+}
+/* Billede + titel i samme række */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Billedet */
+.title-row .timeline-img {
+    width: 85px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+/* ------------------------------
+   TIMELINE
+   ------------------------------ */
+
+.timeline-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: rgba(217, 221, 255);
+    transform: translateX(-50%);
+}
+
+/* Each item */
+.timeline li {
+    align-items: flex-start;
+    width: 50%;
+    padding: 25px 45px;
+    position: relative;
+}
+
+.timeline-img {
+    width: 140px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
 
 /* Alternate layout */
 .timeline li:nth-child(odd) {

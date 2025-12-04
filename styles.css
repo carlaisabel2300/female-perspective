@@ -264,14 +264,22 @@ info.html styling
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
-.square-containers1, .square-containers2 {
+.square-containers1, .square-containers2, .square-containers3,.square-containers4{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
+    font-size: 12px;
 
+    }
 
+.square-containers1 h3,
+.square-containers2 h3,
+.square-containers4 h3 {
+    text-transform: uppercase;
 }
+
+
 
 .square-wrapper {
     flex-direction: column;
@@ -279,8 +287,8 @@ info.html styling
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    height: 500px;
-    width: 350px;
+    height: 350px;
+    width: 250px;
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
     white-space: nowrap;

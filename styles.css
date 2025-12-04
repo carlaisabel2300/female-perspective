@@ -303,6 +303,7 @@ info.html styling
  .education-logo img{
      display: flex;
      align-items: center;
-     width: 300px;
+     max-width: 300px;
+     max-height: 80px;
      margin-top: 40px;
 }

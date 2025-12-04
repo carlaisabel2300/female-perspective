@@ -288,7 +288,6 @@ info.html styling
 .square-wrapper {
     flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 10%;
     height: 450px;
@@ -299,4 +298,11 @@ info.html styling
     margin-bottom: 50px;
 
 
+}
+
+ .education-logo img{
+     display: flex;
+     align-items: center;
+     width: 300px;
+     margin-top: 40px;
 }

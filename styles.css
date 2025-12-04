@@ -164,10 +164,7 @@ info.html styling
 
 /* Each item */
 .timeline li {
-    display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    gap: 20px;
     width: 50%;
     padding: 25px 45px;
     position: relative;
@@ -262,6 +259,20 @@ info.html styling
     font-size: 13px;
     color: #4B2E2A;
     cursor: pointer;
+}
+/* Billede + titel i samme række */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Billedet */
+.title-row .timeline-img {
+    width: 85px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
 }
 
 

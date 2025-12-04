@@ -270,28 +270,38 @@ info.html styling
    UDDANNELSER
    ------------------------------ */
 
+.educationlocation {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    color: rgb(0, 56, 168);
+}
 #info-title{
     display: flex;
     justify-content: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
-.square-containers1, .square-containers2 {
+.square-cph1, .square-cph2, .square-fyn1, .square-jutland1, .square-jutland2, .square-jutland3, .square-bornholm1{
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    margin: 40px 0;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-left: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    }
 
 
-}
 
 .square-wrapper {
     flex-direction: column;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 10%;
-    height: 500px;
+    height: 450px;
     width: 350px;
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
@@ -299,4 +309,12 @@ info.html styling
     margin-bottom: 50px;
 
 
+}
+
+ .education-logo img{
+     display: flex;
+     align-items: center;
+     max-width: 300px;
+     max-height: 80px;
+     margin-top: 40px;
 }

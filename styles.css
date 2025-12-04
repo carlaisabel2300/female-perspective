@@ -126,13 +126,13 @@ info.html styling
     color: rgba(0, 56, 168, 0.56);
 }
 
-.circle-container :hover{
+.circle-container div:hover{
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
 
 /* ------------------------------
-   TIMELINE (MATCHER DIT DESIGN)
+   TIMELINE
    ------------------------------ */
 
 .timeline-wrapper {
@@ -218,6 +218,15 @@ info.html styling
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 
 }
+
+/* For at lukke p boksen - Dette er "klik for at lukke" tekst. - Skjult som standard, hvis du ønsker det */
+.bio.hidden {
+    display: none;
+}
+.close {
+    font-weight: bold;
+}
+
     /* Title label */
 .timeline li .title {
     display: inline-block;

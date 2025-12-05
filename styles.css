@@ -53,7 +53,7 @@ nav ul li a {
 
     text-decoration: none;
     color: #4B2E2A;
-    font-family: 'Exo 2', sans-serif;
+    font-family: Arial;
     font-size: 20px;
 }
 
@@ -129,7 +129,7 @@ info.html styling
     display: flex;
     justify-content: center;
     padding-top: 25px;
-  color: rgb(0, 56, 168);
+    color: rgb(0, 56, 168);
 }
 .circle-container {
     display: flex;
@@ -158,7 +158,7 @@ info.html styling
 }
 
 .circle-container h5 {
-   font-style: italic;
+    font-style: italic;
     margin-top: 10px;
     color: rgba(0, 56, 168, 0.56);
 }
@@ -172,9 +172,16 @@ info.html styling
    ------------------------------ */
 
 .timeline-wrapper {
-    max-width: 1500px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
+    position: relative;
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
@@ -185,6 +192,7 @@ info.html styling
     top: 0;
     bottom: 0;
     left: 50%;
+    width: 4px;
     background: rgba(217, 221, 255);
     transform: translateX(-50%);
 }
@@ -197,6 +205,11 @@ info.html styling
     position: relative;
 }
 
+.timeline-img {
+    width: 140px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
 
 .text-box {
     display: flex;
@@ -293,12 +306,6 @@ info.html styling
     border-radius: 10px;
     flex-shrink: 0;
 }
-
-.timeline-img {
-    width: 300px !important;
-    height: 400px !important;
-}
-
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -391,13 +398,11 @@ info.html styling
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
-    font-size: 15px;
-    font-style: italic;
     box-shadow: 0 3px 8px rgba(0,0,0,0.08);
 
 }
 
-    /* Title label */
+/* Title label */
 .timeline li .title {
     display: inline-block;
     background: rgb(0, 56, 168);
@@ -466,7 +471,7 @@ info.html styling
     font-size: 12px;
     text-transform: uppercase;
 
-    }
+}
 
 
 
@@ -485,10 +490,10 @@ info.html styling
 
 }
 
- .education-logo img{
-     display: flex;
-     align-items: center;
-     max-width: 300px;
-     max-height: 80px;
-     margin-top: 40px;
+.education-logo img{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    max-height: 80px;
+    margin-top: 40px;
 }

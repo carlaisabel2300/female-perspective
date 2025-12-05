@@ -2,7 +2,8 @@
 hele siden
  -----------------------------------*/
 body {
-    background-color: #FFE4EF;
+
+    background: linear-gradient(to bottom, #FFE4EF, #FFE4EF);
 }
 
 /*-----------------------------------

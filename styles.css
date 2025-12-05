@@ -2,40 +2,43 @@
 hele siden
  -----------------------------------*/
 body {
-    background-color: #FFE4EF;
+    background-color: floralwhite;
 }
 
 /*-----------------------------------
 h1 female perspective + logo
 -----------------------------------*/
-.image-logo {
-    display: flex;
-    width: 55px;
-    height: 55px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
+
 h1 a {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: rgb(0, 56, 168);
-    font-family: "Snell Roundhand", cursive;
-    font-size: 50px;
-    font-weight: lighter;
+    color: rgb(236, 72, 200);
+    font-family: Marcel, sans-serif;
+    font-feature:settingsnormal;
+    font-size: 60px;
+    font-weight: bolder;
+    font-style: italic;
+    height: 60px;
+    letter-spacing: 0.2px;
+    line-height: 16.8px;
+    /*font-family: "Snell Roundhand", cursive; */
+
     cursor: pointer;
     margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
+
 }
 
 /*-----------------------------------
 header punkter
  -----------------------------------*/
 header {
-    border-bottom: 1px solid;
+
     position: sticky;
     top: 0;
+    padding-top: 15px;
     background-color: #FFE4EF;
     z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
 }
@@ -52,9 +55,12 @@ nav ul {
 nav ul li a {
 
     text-decoration: none;
-    color: #4B2E2A;
+    color: white;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 15px;
+   background-color: rgb(236, 72, 200);
+    padding: 10px 15px;
+    border-radius: 25px;
 }
 
 nav ul li a:hover {
@@ -122,7 +128,7 @@ header punkter
 
 
 /*-------------------------------------
-info.html styling
+INFO
  -------------------------------------*/
 #info-title{
     display: flex;
@@ -448,29 +454,43 @@ info.html styling
    UDDANNELSER
    ------------------------------ */
 
-.educationlocation {
-    display: flex;
-    justify-content: left;
-    margin-left: 30px;
-    padding-top: 25px;
-    padding-bottom: 50px;
-    color: rgb(0, 56, 168);
-}
-#info-title{
+/* titel */
+#info-title {
     display: flex;
     justify-content: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
-.square-cph1, .square-cph2, .square-fyn1, .square-jutland1, .square-jutland2, .square-jutland3, .square-bornholm1{
-    display: flex;
-    justify-content: flex-start;
-    gap: 50px;
+
+/* overskrift */
+.educationlocation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    color: rgb(0, 56, 168);
+}
+
+/* Fælles styling for ALLE square-sektioner */
+.square-cph1,
+.square-cph2,
+.square-jutland1,
+.square-jutland2,
+.square-jutland3,
+.square-bornholm1,
+.square-fyn1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
     margin-left: 50px;
+    margin-right: 50px;
     font-size: 12px;
     text-transform: uppercase;
-
 }
+
+
 
 
 

@@ -2,7 +2,8 @@
 hele siden
  -----------------------------------*/
 body {
-    background-color: #FFE4EF;
+
+    background: linear-gradient(to bottom, #FFE4EF, #FFE4EF);
 }
 
 /*-----------------------------------
@@ -36,6 +37,8 @@ header {
     border-bottom: 1px solid;
     position: sticky;
     top: 0;
+    background-color: #FFE4EF;
+    z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
 }
 
 nav ul {
@@ -83,6 +86,41 @@ header punkter
     background-color: whitesmoke;
     font-weight: 600;
 }
+
+/* ------------------------------
+   FORSIDE
+   ------------------------------ */
+.index-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    color: rgb(0, 56, 168);
+}
+
+.small-text-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.text-box1, .text-box2, .text-box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgba(217, 221, 255);
+    color: rgb(0, 56, 168);
+    white-space: normal;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+
 /*-------------------------------------
 info.html styling
  -------------------------------------*/
@@ -90,15 +128,13 @@ info.html styling
     display: flex;
     justify-content: center;
     padding-top: 25px;
-  color: rgb(0, 56, 168);
+    color: rgb(0, 56, 168);
 }
 .circle-container {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
-
-
 }
 
 .circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5{
@@ -119,7 +155,7 @@ info.html styling
 }
 
 .circle-container h5 {
-   font-style: italic;
+    font-style: italic;
     margin-top: 10px;
     color: rgba(0, 56, 168, 0.56);
 }
@@ -128,7 +164,6 @@ info.html styling
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
-
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -161,9 +196,23 @@ info.html styling
 
 /* Each item */
 .timeline li {
+    align-items: flex-start;
     width: 50%;
     padding: 25px 45px;
     position: relative;
+}
+
+.timeline-img {
+    width: 140px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
 }
 
 /* Alternate layout */
@@ -217,15 +266,140 @@ info.html styling
 
 }
 
-/* For at lukke p boksen - Dette er "klik for at lukke" tekst. - Skjult som standard, hvis du ønsker det */
-.bio.hidden {
-    display: none;
-}
-.close {
-    font-weight: bold;
+/* Title label */
+.timeline li .title {
+    display: inline-block;
+    background: rgb(0, 56, 168);
+    color: rgba(217, 221, 255);
+    padding: 30px 48px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
-    /* Title label */
+
+/* Close button */
+.close {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #4B2E2A;
+    cursor: pointer;
+}
+/* Billede + titel i samme række */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Billedet */
+.title-row .timeline-img {
+    width: 85px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+/* ------------------------------
+   TIMELINE
+   ------------------------------ */
+
+.timeline-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: rgba(217, 221, 255);
+    transform: translateX(-50%);
+}
+
+/* Each item */
+.timeline li {
+    align-items: flex-start;
+    width: 50%;
+    padding: 25px 45px;
+    position: relative;
+}
+
+.timeline-img {
+    width: 140px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+
+/* Alternate layout */
+.timeline li:nth-child(odd) {
+    left: 0;
+}
+
+.timeline li:nth-child(even) {
+    left: 50%;
+}
+
+/* Circle marker */
+.timeline li::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    width: 22px;
+    height: 22px;
+    background: rgb(0, 56, 168);
+    border: 4px solid rgb(0, 56, 168);
+    border-radius: 50%;
+    z-index: 10;
+    left: calc(100% - 10px);
+    transform: translateX(-50%);
+}
+
+/* Move circle for even items */
+.timeline li:nth-child(even)::before {
+    left: -10px;
+}
+
+/* Content box styling */
+.timeline li h3,
+.timeline li p {
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.timeline li small {
+    display: inline-block;
+    background: rgba(217, 221, 255);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #4B2E2A;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
+}
+
+/* Title label */
 .timeline li .title {
     display: inline-block;
     background: rgb(0, 56, 168);
@@ -242,6 +416,7 @@ info.html styling
 .title {
     margin-bottom: 20px;
 }
+
 /* Close button */
 .close {
     display: inline-block;
@@ -249,4 +424,73 @@ info.html styling
     font-size: 13px;
     color: #4B2E2A;
     cursor: pointer;
+}
+/* Billede + titel i samme række */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Billedet */
+.title-row .timeline-img {
+    width: 85px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+
+
+/* ------------------------------
+   UDDANNELSER
+   ------------------------------ */
+
+.educationlocation {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    color: rgb(0, 56, 168);
+}
+#info-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    color: rgb(0, 56, 168);
+}
+.square-cph1, .square-cph2, .square-fyn1, .square-jutland1, .square-jutland2, .square-jutland3, .square-bornholm1{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-left: 50px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+
+
+
+.square-wrapper {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+    height: 450px;
+    width: 350px;
+    background-color: rgba(217, 221, 255);
+    color: rgb(0, 56, 168);
+    white-space: nowrap;
+    margin-bottom: 50px;
+
+
+}
+
+.education-logo img{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    max-height: 80px;
+    margin-top: 40px;
 }

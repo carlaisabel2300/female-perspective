@@ -99,19 +99,18 @@ header punkter
 
 .small-text-boxes{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
 }
 
-.text-box {
+.text-box1, .text-box2, .text-box3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px !important;
-    width: 200px !important;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);

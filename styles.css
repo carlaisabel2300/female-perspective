@@ -1,5 +1,5 @@
 body {
-    background-color: floralwhite;
+background-color: white;
 }
 
 /*-----------------------------------
@@ -55,7 +55,6 @@ header {
     position: sticky;
     top: 0;
     padding: 15px 40px;
-    background-color: #FFE4EF;
     z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
     justify-content: space-between
 }
@@ -98,7 +97,6 @@ header punkter
 
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-
 }
 
 .timeline-header {

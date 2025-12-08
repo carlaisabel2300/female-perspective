@@ -528,6 +528,20 @@ INFO
     color: rgb(0, 56, 168);
 }
 
+/*design kort*/
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+#map {
+    height: 500px;
+    width: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 /* Fælles styling for ALLE square-sektioner */
 .square-cph1,
 .square-cph2,

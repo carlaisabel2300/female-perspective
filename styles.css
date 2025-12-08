@@ -1,7 +1,3 @@
-/*-----------------------------------
-hele siden
- -----------------------------------*/
-
 body {
     background-color: floralwhite;
 }
@@ -10,21 +6,42 @@ body {
 h1 female perspective + logo
 -----------------------------------*/
 
-h1 a {
-    display: flex;
-    justify-content: center;
+/*h1 a {
     text-decoration: none;
     color: rgba(55, 14, 14, 0.7);
     font-family: "Snell Roundhand", cursive;
-    font-feature:settingsnormal;
-    font-size: 60px;
-    height: 60px;
+    font-feature: settingsnormal;
+    font-size: 40px;
     letter-spacing: 0.2px;
     line-height: 16.8px;
     cursor: pointer;
     margin-top: 35px;
     margin-right: 10px;
     margin-left: 10px;
+}*/
+
+h1.logo {
+    margin: 0;
+}
+
+h1.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: rgba(55, 14, 14, 0.7);
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 25px;
+    line-height: 1.1;
 }
 
 /*-----------------------------------
@@ -32,19 +49,22 @@ header punkter
  -----------------------------------*/
 header {
 
+    display: flex;
+    align-items: center;
+    gap: 40px;
     position: sticky;
     top: 0;
-    padding-top: 15px;
+    padding: 15px 40px;
     background-color: #FFE4EF;
     z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
+    justify-content: space-between
 }
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    gap: 30px; /* afstand mellem links */
     list-style: none;
-    padding: 1cm;
+    padding: 0;
     margin: 0;
 }
 
@@ -53,9 +73,9 @@ nav ul li a {
     color: white;
     font-family: Arial;
     font-size: 15px;
-   background-color: rgb(236, 72, 200);
-    padding: 10px 15px;
-    border-radius: 25px;
+    background-color: rgb(236, 72, 200);
+    padding: 4px 10px;
+    border-radius: 40px;
 }
 
 nav ul li a:hover {
@@ -91,14 +111,14 @@ header punkter
 /* ------------------------------
    FORSIDE
    ------------------------------ */
-.index-title{
+.index-title {
     display: flex;
     justify-content: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
 
-.small-text-boxes{
+.small-text-boxes {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
@@ -121,16 +141,16 @@ header punkter
 }
 
 
-
 /*-------------------------------------
 INFO
  -------------------------------------*/
-#info-title{
+#info-title {
     display: flex;
     justify-content: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
+
 .circle-container {
     display: flex;
     justify-content: space-evenly;
@@ -140,7 +160,7 @@ INFO
 
 }
 
-.circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5{
+.circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5 {
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -163,10 +183,11 @@ INFO
     color: rgba(0, 56, 168, 0.56);
 }
 
-.circle-container div:hover{
+.circle-container div:hover {
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
+
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -255,7 +276,7 @@ INFO
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .timeline li small {
@@ -265,7 +286,7 @@ INFO
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -292,6 +313,7 @@ INFO
     color: #4B2E2A;
     cursor: pointer;
 }
+
 /* Billede + titel i samme række */
 .title-row {
     display: flex;
@@ -306,6 +328,7 @@ INFO
     border-radius: 10px;
     flex-shrink: 0;
 }
+
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -388,7 +411,7 @@ INFO
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 .timeline li small {
@@ -398,7 +421,7 @@ INFO
     border-radius: 10px;
     margin-bottom: 15px;
     color: #4B2E2A;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -428,6 +451,7 @@ INFO
     color: #4B2E2A;
     cursor: pointer;
 }
+
 /* Billede + titel i samme række */
 .title-row {
     display: flex;
@@ -442,7 +466,6 @@ INFO
     border-radius: 10px;
     flex-shrink: 0;
 }
-
 
 
 /* ------------------------------
@@ -486,9 +509,6 @@ INFO
 }
 
 
-
-
-
 .square-wrapper {
     flex-direction: column;
     display: flex;
@@ -504,7 +524,7 @@ INFO
 
 }
 
-.education-logo img{
+.education-logo img {
     display: flex;
     align-items: center;
     max-width: 300px;

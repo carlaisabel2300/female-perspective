@@ -100,27 +100,63 @@ header punkter
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
+.frontpage {
+    background-image: url("kvinder.it.png");
+    background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
+    background-position: center; /* centrerer billedet */
+    background-repeat: no-repeat; /* undgå gentagelse */
+    width: 100%;
+    min-height: 400px; /* eller mere/mindre afhængigt af hvor høj sektionen skal være */
+}
+.procent-container{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+.procentW{
+    display: inline-block;
+    font-weight: bold ;
+    color: deeppink;
+    font-size: 150px;
+    padding-right: 20px;
+}
 
-.small-text-boxes{
+.procentM{
+    display: inline-block;
+    color: gray;
+    font-size: 90px;
+}
+
+
+
+
+    .small-text-boxes{
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
-    margin: 40px 0;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #4B2E2A;
+
 }
 
 .text-box1, .text-box2, .text-box3 {
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+    text-align: center;
+padding: 10px;
+    height: 300px;
+    width: 300px;
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
     white-space: normal;
-    text-align: left;
-    font-size: 14px;
+    font-size: 30px;
+
 }
 
 

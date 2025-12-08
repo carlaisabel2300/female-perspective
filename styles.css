@@ -149,12 +149,12 @@ header punkter
     font-size: 90px;
 }
 
-
-.small-text-boxes{
+.small-text-boxes {
     display: flex;
-    justify-content: space-evenly;
-    padding: 100px 200px ;
-    background-color: white;
+    justify-content: center;
+    gap: 50px; /* mellemrum mellem bokse */
+    padding: 2px 2px; /* mindre padding */
+    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
 }
 
 .info {
@@ -170,7 +170,6 @@ header punkter
     cursor: pointer;
 }
 
-
 .text-box1, .text-box2, .text-box3 {
     flex-direction: column;
     display: flex;
@@ -184,10 +183,7 @@ header punkter
     color: rgb(0, 56, 168);
     white-space: normal;
     font-size: 30px;
-
-
 }
-
 
 
 /*-------------------------------------

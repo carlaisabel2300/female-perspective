@@ -645,13 +645,14 @@ INFO
 }
 
 .footer-col h3 {
-    margin: 10px;
+    margin: 40px;
     color: #fcebf9;
 }
 
 .footer-col a {
     color: white;
-    margin: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
     text-decoration: none;
     display: block;
 }
@@ -661,14 +662,14 @@ INFO
 }
 
 .footer-col p {
-    margin: 10px;
-}
+    margin-left: 40px;
+    margin-bottom: 20px;}
 
 /* Logo section */
 .footer-logo {
     width: 150px;
-    margin: 10px;
-}
+    margin-left: 40px;
+    margin-bottom: 20px;}
 
 /* Divider line */
 hr {

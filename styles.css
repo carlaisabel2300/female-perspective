@@ -98,6 +98,49 @@ header punkter
 /* ------------------------------
    FORSIDE
    ------------------------------ */
+
+.frontpage-quotebold{
+     background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    margin-left: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 60px;
+
+}
+
+.frontpage-quoteitalic{
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-left: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 60px;
+    font-style: italic;
+    font-weight: lighter;
+
+
+}
+
+.tagline {
+    background-color: rgba(217, 221, 255);
+    margin-bottom: 80px;
+}
+.tagline-quote {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;
+;
+}
+
 .index-title{
     display: flex;
     justify-content: center;

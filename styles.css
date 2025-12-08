@@ -1,5 +1,5 @@
 body {
-    background-color: floralwhite;
+background-color: white;
 }
 
 /*-----------------------------------
@@ -98,7 +98,6 @@ header punkter
 
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-
 }
 
 .timeline-header {

@@ -138,7 +138,7 @@ header punkter
     font-size: 30px;
     font-style: italic;
     font-weight: lighter;
-;
+
 }
 
 .index-title{
@@ -262,6 +262,30 @@ INFO
 .circle-container div:hover {
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
+}
+
+/* ------------------------------
+   BIAS CASES
+   ------------------------------ */
+.biascaseintro {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 15px;
+}
+.biascaseintro h3 {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
 /* ------------------------------
@@ -719,3 +743,7 @@ hr {
     border: none;
     border-top: 1px solid #e5e5e5;
 }
+
+
+
+

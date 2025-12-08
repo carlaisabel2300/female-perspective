@@ -155,8 +155,13 @@ header punkter
     justify-content: space-evenly;
     padding: 100px 200px ;
     background-color: white;
+}
+.quote-link {
+    text-decoration: none;  /* ingen blå understregning */
+}
 
-
+.quote-link:hover .text-box1 {
+    cursor: pointer;
 }
 
 

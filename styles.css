@@ -7,27 +7,13 @@
 }
 
 body {
-    background-color: white;
+background-color: white;
 }
 
 /*-----------------------------------
-FÆLLES HEADER
+h1 female perspective + logo
 -----------------------------------*/
 
-header {
-
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    position: sticky;
-    top: 0;
-    background-color: #fcebf9;
-    padding: 15px 40px;
-    z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
-    justify-content: space-between;
-}
-
-/* logo*/
 
 h1.logo {
     margin: 0;
@@ -54,7 +40,21 @@ h1.logo a {
     font-family: Arial;
 }
 
-/* menu */
+/*-----------------------------------
+header punkter
+ -----------------------------------*/
+header {
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: sticky;
+    top: 0;
+    background-color: #fcebf9;
+    padding: 15px 40px;
+    z-index: 9999; /* gør bla at timeline går under headeren og ikke køre ovenpå*/
+    justify-content: space-between;
+}
 
 nav ul {
     display: flex;
@@ -79,20 +79,31 @@ nav ul li a:hover {
 }
 
 /*to make the "active" tag bold when on that specific page*/
+
 nav ul li a.active {
     font-weight: bold;
+}
+
+/*-----------------------------------
+header punkter
+ -----------------------------------*/
+
+.timeline-header {
+    text-align: center;
+    padding: 1.4rem 0;
+    background-color: whitesmoke;
+    font-weight: 600;
 }
 
 /* ------------------------------
    FORSIDE
    ------------------------------ */
-.index-title {
+.index-title{
     display: flex;
     justify-content: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
-
 .frontpage {
     background-image: url("photos/it-women.png");
     background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
@@ -103,37 +114,35 @@ nav ul li a.active {
     object-fit: contain;
     object-position: center;
 }
-
-.procent-container {
+.procent-container{
     display: flex;
     justify-content: left;
-    align-items: center;
+    align-items: center ;
 
     padding-top: 100px;
     padding-bottom: 250px;
     padding-left: 200px
 }
-
-.procentW {
+.procentW{
     display: inline-block;
-    font-weight: bold;
+    font-weight: bold ;
     color: deeppink;
     font-size: 150px;
     padding-right: 20px;
 }
 
-.procentM {
+.procentM{
     display: inline-block;
     color: gray;
     font-size: 90px;
 }
 
-
 .small-text-boxes {
     display: flex;
-    justify-content: space-evenly;
-    padding: 100px 200px;
-    background-color: white;
+    justify-content: center;
+    gap: 50px; /* mellemrum mellem bokse */
+    padding: 2px 2px; /* mindre padding */
+    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
 }
 
 .info {
@@ -141,15 +150,13 @@ nav ul li a.active {
     font-size: 12px;
 
 }
-
 .quote-link {
-    text-decoration: none; /* ingen blå understregning */
+    text-decoration: none;  /* ingen blå understregning */
 }
 
 .quote-link:hover .text-box1 {
     cursor: pointer;
 }
-
 
 .text-box1, .text-box2, .text-box3 {
     flex-direction: column;
@@ -164,9 +171,8 @@ nav ul li a.active {
     color: rgb(0, 56, 168);
     white-space: normal;
     font-size: 30px;
-
-
 }
+
 
 /*-------------------------------------
 INFO
@@ -216,31 +222,155 @@ INFO
 }
 
 /* ------------------------------
-   BIAS CASES
+   TIMELINE
    ------------------------------ */
-/* ------------------------------
-   ROLLEMODELLER
-   ------------------------------ */
-/* ------------------------------
-   ROLLEMODELLER – TIMELINE
-   ------------------------------ */
-
-.timeline-header {
-    text-align: center;
-    padding: 1.4rem 0;
-    background-color: whitesmoke;
-    font-weight: 600;
+.timeline-wrapper { /** Container that wraps the entire timeline */
+    max-width: 1200px; /** Sets maximum width of the timeline wrapper */
+    margin: 40px auto; /** Adds vertical margin and centers horizontally */
+    padding: 20px; /** Adds inner spacing */
+    position: relative; /** Allows absolutely positioned children */
 }
 
-/* Wrapper omkring hele timeline */
+.timeline { /** The main timeline list */
+    list-style: none; /** Removes default list bullets */
+    margin: 0; /** Removes default margin */
+    padding: 0; /** Removes default padding */
+    position: relative; /** Enables absolute positioning for child elements */
+}
+
+/* Vertical line */
+.timeline::before { /** Creates the central vertical line */
+    content: ""; /** Required for pseudo-element to appear */
+    position: absolute; /** Positions element relative to timeline container */
+    top: 0; /** Aligns to top */
+    bottom: 0; /** Stretches to bottom */
+    left: 50%; /** Centers horizontally */
+    width: 4px; /** Line thickness */
+    background: rgba(217, 221, 255); /** Color of the vertical line */
+    transform: translateX(-50%); /** Adjusts position to be perfectly centered */
+}
+
+/* Each item */
+.timeline li { /** Individual timeline event item */
+    align-items: flex-start; /** Aligns flex children at the start (if flex used) */
+    width: 50%; /** Each item takes half of the timeline width */
+    padding: 25px 45px; /** Inner spacing */
+    position: relative; /** Needed for positioning the circle marker */
+}
+
+.timeline-img { /** Image used inside a timeline entry */
+    width: 140px; /** Sets width of the image */
+    border-radius: 10px; /** Rounds corners */
+    flex-shrink: 0; /** Prevents the image from shrinking */
+}
+
+.text-box { /** Container for text sections in each item */
+    display: flex; /** Makes children align in a column */
+    flex-direction: column; /** Stacks elements vertically */
+    gap: 15px; /** Space between stacked elements */
+    flex: 1; /** Allows text box to grow and fill space */
+}
+
+/* Alternate layout */
+.timeline li:nth-child(odd) { /** Odd-numbered items appear on the left */
+    left: 0; /** Positions item on the left side */
+}
+
+.timeline li:nth-child(even) { /** Even-numbered items appear on the right */
+    left: 50%; /** Positions item on the right side */
+}
+
+/* Circle marker */
+.timeline li::before { /** Circle indicator for each timeline item */
+    content: ""; /** Makes pseudo-element visible */
+    position: absolute; /** Allows positioning relative to the item */
+    top: 28px; /** Vertical position of the circle */
+    width: 22px; /** Width of the circle */
+    height: 22px; /** Height of the circle */
+    background: rgb(0, 56, 168); /** Circle fill color */
+    border: 4px solid rgb(0, 56, 168); /** Border of the circle */
+    border-radius: 50%; /** Makes the element circular */
+    z-index: 10; /** Ensures circle appears above other elements */
+    left: calc(100% - 10px); /** Positions circle near the vertical line */
+    transform: translateX(-50%); /** Adjusts horizontal alignment */
+}
+
+/* Move circle for even items */
+.timeline li:nth-child(even)::before { /** Adjusts circle for right-side items */
+    left: -10px; /** Moves the circle leftward for even items */
+}
+
+/* Content box styling */
+.timeline li h3,
+.timeline li p { /** Styles headings and paragraphs */
+    background: rgba(217, 221, 255); /** Light background color */
+    padding: 18px 22px; /** Inner spacing */
+    border-radius: 10px; /** Rounds corners */
+    margin-bottom: 15px; /** Space below each block */
+    color: #4B2E2A; /** Text color */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Adds soft shadow */
+}
+
+.timeline li small { /** Styles <small> text similarly */
+    display: inline-block; /** Makes small behave like a block box */
+    background: rgba(217, 221, 255); /** Same light background */
+    padding: 18px 22px; /** Inner spacing */
+    border-radius: 10px; /** Rounded corners */
+    margin-bottom: 15px; /** Space below */
+    color: #4B2E2A; /** Text color */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Soft shadow */
+}
+
+/* Title label */
+.timeline li .title { /** Section titles for each timeline item */
+    display: inline-block; /** Makes the title fit to its content */
+    background: rgb(0, 56, 168); /** Dark blue background */
+    color: rgba(217, 221, 255); /** Light text color */
+    padding: 30px 48px; /** Inner spacing */
+    border-radius: 8px; /** Rounded corners */
+    margin-bottom: 15px; /** Space below title */
+    font-weight: 700; /** Bold text */
+    text-transform: uppercase; /** Makes all letters uppercase */
+    font-size: 15px; /** Text size */
+    letter-spacing: 1px; /** Adds space between letters */
+}
+
+/* Close button */
+.close { /** Close button styling */
+    display: inline-block; /** Makes it behave like a block segment */
+    margin-top: 5px; /** Space above */
+    font-size: 13px; /** Text size */
+    color: #4B2E2A; /** Text color */
+    cursor: pointer; /** Shows pointer cursor on hover */
+}
+
+/* Billede + titel i samme række */
+.title-row { /** Container for aligning image + title horizontally */
+    display: flex; /** Enables horizontal layout */
+    align-items: center; /** Vertically aligns elements */
+    gap: 20px; /** Space between image and title */
+}
+
+/* Billedet */
+.title-row .timeline-img { /** Smaller image version for title row */
+    width: 85px; /** Reduced width */
+    height: auto; /** Auto height to keep proportions */
+    border-radius: 10px; /** Rounded corners */
+    flex-shrink: 0; /** Prevents shrinking */
+}
+
+
+/* ------------------------------
+   TIMELINE
+   ------------------------------ */
+
 .timeline-wrapper {
-    max-width: 900px; /* ændr her hvis den skal være bredere */
+    max-width: 900px;
     margin: 40px auto;
     padding: 20px;
     position: relative;
 }
 
-/* Selve listen */
 .timeline {
     list-style: none;
     margin: 0;
@@ -248,7 +378,7 @@ INFO
     position: relative;
 }
 
-/* Den lodrette linje i midten */
+/* Vertical line */
 .timeline::before {
     content: "";
     position: absolute;
@@ -260,7 +390,7 @@ INFO
     transform: translateX(-50%);
 }
 
-/* Hvert punkt på timeline */
+/* Each item */
 .timeline li {
     align-items: flex-start;
     width: 50%;
@@ -268,22 +398,14 @@ INFO
     position: relative;
 }
 
-/* Billeder i timeline */
 .timeline-img {
     width: 140px;
     border-radius: 10px;
     flex-shrink: 0;
 }
 
-/* Tekstboks inde i et punkt */
-.text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    flex: 1;
-}
 
-/* Venstre/højre side-skift */
+/* Alternate layout */
 .timeline li:nth-child(odd) {
     left: 0;
 }
@@ -292,7 +414,7 @@ INFO
     left: 50%;
 }
 
-/* Cirklen på linjen */
+/* Circle marker */
 .timeline li::before {
     content: "";
     position: absolute;
@@ -307,11 +429,12 @@ INFO
     transform: translateX(-50%);
 }
 
+/* Move circle for even items */
 .timeline li:nth-child(even)::before {
     left: -10px;
 }
 
-/* Bokse med tekst */
+/* Content box styling */
 .timeline li h3,
 .timeline li p {
     background: rgba(217, 221, 255);
@@ -322,7 +445,6 @@ INFO
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
-/* Lille tekst */
 .timeline li small {
     display: inline-block;
     background: rgba(217, 221, 255);
@@ -331,9 +453,10 @@ INFO
     margin-bottom: 15px;
     color: #4B2E2A;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
 }
 
-/* Label / titel på hvert punkt */
+/* Title label */
 .timeline li .title {
     display: inline-block;
     background: rgb(0, 56, 168);
@@ -343,7 +466,7 @@ INFO
     margin-bottom: 15px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 25px; /* ændr til 15px hvis du vil have dem mindre */
+    font-size: 25px;
     letter-spacing: 1px;
 }
 
@@ -351,7 +474,7 @@ INFO
     margin-bottom: 20px;
 }
 
-/* Luk-knap */
+/* Close button */
 .close {
     display: inline-block;
     margin-top: 5px;
@@ -360,14 +483,14 @@ INFO
     cursor: pointer;
 }
 
-/* Billede + titel på samme række */
+/* Billede + titel i samme række */
 .title-row {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* Mindre billede i titel-rækken */
+/* Billedet */
 .title-row .timeline-img {
     width: 85px;
     height: auto;
@@ -375,9 +498,11 @@ INFO
     flex-shrink: 0;
 }
 
+
 /* ------------------------------
    UDDANNELSER
    ------------------------------ */
+
 /* titel */
 #info-title {
     display: flex;
@@ -408,6 +533,8 @@ INFO
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -438,5 +565,114 @@ INFO
 
 
 
+/* ------------------------------
+   FOOTER
+   ------------------------------ */
 
+.footer {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
 
+/* ---------------- NEWSLETTER ---------------- */
+
+.newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #fcebf9;
+}
+
+.newsletter-text {
+    max-width: 600px;
+    margin: 80px;
+}
+
+.newsletter-text h2 {
+    color: rgb(0, 56, 168);
+    margin-bottom: 20px;
+}
+
+.newsletter-text strong {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.newsletter-text a {
+    color: rgb(0, 56, 168);
+}
+
+.newsletter-form {
+    background: #fafafa;
+    margin: 80px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #ececec;
+}
+
+.newsletter-form input {
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background:  #ffc9e0;
+    color: rgb(0, 56, 168);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ---------------- COLUMNS ---------------- */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    background-color: rgb(0, 56, 168);
+    color: #fcebf9;
+}
+
+.footer-col h3 {
+    margin: 40px;
+    color: #fcebf9;
+}
+
+.footer-col a {
+    color: white;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-col p {
+    margin-left: 40px;
+    margin-bottom: 20px;}
+
+/* Logo section */
+.footer-logo {
+    width: 150px;
+    margin-left: 40px;
+    margin-bottom: 20px;}
+
+/* Divider line */
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}

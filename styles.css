@@ -156,6 +156,12 @@ header punkter
     padding: 100px 200px ;
     background-color: white;
 }
+
+.info {
+    padding-top: 20px;
+    font-size: 12px;
+
+}
 .quote-link {
     text-decoration: none;  /* ingen blå understregning */
 }

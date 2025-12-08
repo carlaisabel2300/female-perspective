@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
 body {
 background-color: white;
 }
@@ -6,19 +14,6 @@ background-color: white;
 h1 female perspective + logo
 -----------------------------------*/
 
-/*h1 a {
-    text-decoration: none;
-    color: rgba(55, 14, 14, 0.7);
-    font-family: "Snell Roundhand", cursive;
-    font-feature: settingsnormal;
-    font-size: 40px;
-    letter-spacing: 0.2px;
-    line-height: 16.8px;
-    cursor: pointer;
-    margin-top: 35px;
-    margin-right: 10px;
-    margin-left: 10px;
-}*/
 
 h1.logo {
     margin: 0;
@@ -92,13 +87,6 @@ nav ul li a.active {
 /*-----------------------------------
 header punkter
  -----------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
 
 .timeline-header {
     text-align: center;
@@ -149,12 +137,18 @@ header punkter
     font-size: 90px;
 }
 
-
-.small-text-boxes{
+.small-text-boxes {
     display: flex;
-    justify-content: space-evenly;
-    padding: 100px 200px ;
-    background-color: white;
+    justify-content: center;
+    gap: 50px; /* mellemrum mellem bokse */
+    padding: 2px 2px; /* mindre padding */
+    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
+}
+
+.info {
+    padding-top: 20px;
+    font-size: 12px;
+
 }
 .quote-link {
     text-decoration: none;  /* ingen blå understregning */
@@ -163,7 +157,6 @@ header punkter
 .quote-link:hover .text-box1 {
     cursor: pointer;
 }
-
 
 .text-box1, .text-box2, .text-box3 {
     flex-direction: column;
@@ -178,10 +171,7 @@ header punkter
     color: rgb(0, 56, 168);
     white-space: normal;
     font-size: 30px;
-
-
 }
-
 
 
 /*-------------------------------------
@@ -571,4 +561,117 @@ INFO
     max-width: 300px;
     max-height: 80px;
     margin-top: 40px;
+}
+
+
+
+/* ------------------------------
+   FOOTER
+   ------------------------------ */
+
+.footer {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+/* ---------------- NEWSLETTER ---------------- */
+
+.newsletter-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: #fcebf9;
+}
+
+.newsletter-text {
+    max-width: 600px;
+    margin: 80px;
+}
+
+.newsletter-text h2 {
+    color: rgb(0, 56, 168);
+    margin-bottom: 20px;
+}
+
+.newsletter-text strong {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.newsletter-text a {
+    color: rgb(0, 56, 168);
+}
+
+.newsletter-form {
+    background: #fafafa;
+    margin: 80px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #ececec;
+}
+
+.newsletter-form input {
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background:  #ffc9e0;
+    color: rgb(0, 56, 168);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ---------------- COLUMNS ---------------- */
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    background-color: rgb(0, 56, 168);
+    color: #fcebf9;
+}
+
+.footer-col h3 {
+    margin: 10px;
+    color: #fcebf9;
+}
+
+.footer-col a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-col p {
+    margin: 10px;
+}
+
+/* Logo section */
+.footer-logo {
+    width: 150px;
+    margin: 10px;
+}
+
+/* Divider line */
+hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
 }

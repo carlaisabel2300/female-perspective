@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
 body {
 background-color: white;
 }
@@ -6,19 +14,6 @@ background-color: white;
 h1 female perspective + logo
 -----------------------------------*/
 
-/*h1 a {
-    text-decoration: none;
-    color: rgba(55, 14, 14, 0.7);
-    font-family: "Snell Roundhand", cursive;
-    font-feature: settingsnormal;
-    font-size: 40px;
-    letter-spacing: 0.2px;
-    line-height: 16.8px;
-    cursor: pointer;
-    margin-top: 35px;
-    margin-right: 10px;
-    margin-left: 10px;
-}*/
 
 h1.logo {
     margin: 0;
@@ -92,13 +87,6 @@ nav ul li a.active {
 /*-----------------------------------
 header punkter
  -----------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
 
 .timeline-header {
     text-align: center;
@@ -117,7 +105,7 @@ header punkter
     color: rgb(0, 56, 168);
 }
 .frontpage {
-    background-image: url("it-women.png");
+    background-image: url("photos/it-women.png");
     background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
     background-position: center; /* centrerer billedet */
     background-repeat: no-repeat; /* undgå gentagelse */
@@ -149,16 +137,26 @@ header punkter
     font-size: 90px;
 }
 
-
-.small-text-boxes{
+.small-text-boxes {
     display: flex;
-    justify-content: space-evenly;
-    padding: 100px 200px ;
-    background-color: white;
-
-
+    justify-content: center;
+    gap: 50px; /* mellemrum mellem bokse */
+    padding: 2px 2px; /* mindre padding */
+    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
 }
 
+.info {
+    padding-top: 20px;
+    font-size: 12px;
+
+}
+.quote-link {
+    text-decoration: none;  /* ingen blå understregning */
+}
+
+.quote-link:hover .text-box1 {
+    cursor: pointer;
+}
 
 .text-box1, .text-box2, .text-box3 {
     flex-direction: column;
@@ -173,10 +171,7 @@ header punkter
     color: rgb(0, 56, 168);
     white-space: normal;
     font-size: 30px;
-
-
 }
-
 
 
 /*-------------------------------------

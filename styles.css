@@ -195,8 +195,6 @@ INFO
     justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
-
-
 }
 
 .circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5 {
@@ -212,8 +210,6 @@ INFO
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
     white-space: nowrap;
-
-
 }
 
 .circle-container h5 {
@@ -228,8 +224,27 @@ INFO
 }
 
 /* ------------------------------
+   VIDEO - KVINDER I IT BRANCHEN
+   ------------------------------ */
+.women-in-it {
+    display: flex;
+    justify-content: center;
+    background: rgba(217, 221, 255);
+    overflow: hidden;
+    width: 50%;
+}
+
+.women-in-it-container{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+/* ------------------------------
    TIMELINE
    ------------------------------ */
+
 .timeline-wrapper { /** Container that wraps the entire timeline */
     max-width: 1200px; /** Sets maximum width of the timeline wrapper */
     margin: 40px auto; /** Adds vertical margin and centers horizontally */

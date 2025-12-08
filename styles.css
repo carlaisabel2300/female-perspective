@@ -116,6 +116,14 @@ header punkter
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
+.white-section{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: deeppink;
+}
 .frontpage {
     background-image: url("it-women.png");
     background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
@@ -130,6 +138,7 @@ header punkter
     display: flex;
     justify-content: left;
     align-items: center ;
+
     padding-top: 100px;
     padding-bottom: 250px;
     padding-left: 200px
@@ -152,10 +161,7 @@ header punkter
 .small-text-boxes{
     display: flex;
     justify-content: space-evenly;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 200px ;
     background-color: white;
 
 

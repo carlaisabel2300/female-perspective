@@ -106,14 +106,14 @@ header punkter
 }
 .frontpage {
     background-image: url("photos/it-women.png");
-    background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
-    background-position: center; /* centrerer billedet */
-    background-repeat: no-repeat; /* undgå gentagelse */
-    width: 100vw;
-    height: 100vh;
-    object-fit: contain;
-    object-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 550px; /* ✨ vigtig! */
+    position: relative;
 }
+
 .procent-container{
     display: flex;
     justify-content: left;
@@ -140,9 +140,11 @@ header punkter
 .small-text-boxes {
     display: flex;
     justify-content: center;
-    gap: 50px; /* mellemrum mellem bokse */
-    padding: 2px 2px; /* mindre padding */
-    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
+    gap: 50px;
+    position: absolute;
+    bottom: -150px; /* ✨ halvt på billede, halvt på hvid baggrund */
+    width: 100%;
+    z-index: 10;
 }
 
 .info {
@@ -173,6 +175,10 @@ header punkter
     font-size: 30px;
 }
 
+.frontpage-whitespace {
+    height: 250px; /* så der er plads til overlappet */
+    background-color: white;
+}
 
 /*-------------------------------------
 INFO

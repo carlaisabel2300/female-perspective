@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
 body {
 background-color: white;
 }
@@ -6,19 +14,6 @@ background-color: white;
 h1 female perspective + logo
 -----------------------------------*/
 
-/*h1 a {
-    text-decoration: none;
-    color: rgba(55, 14, 14, 0.7);
-    font-family: "Snell Roundhand", cursive;
-    font-feature: settingsnormal;
-    font-size: 40px;
-    letter-spacing: 0.2px;
-    line-height: 16.8px;
-    cursor: pointer;
-    margin-top: 35px;
-    margin-right: 10px;
-    margin-left: 10px;
-}*/
 
 h1.logo {
     margin: 0;
@@ -92,13 +87,6 @@ nav ul li a.active {
 /*-----------------------------------
 header punkter
  -----------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
 
 .timeline-header {
     text-align: center;

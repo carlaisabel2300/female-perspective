@@ -1,6 +1,7 @@
 /*-----------------------------------
 hele siden
  -----------------------------------*/
+
 body {
     background-color: floralwhite;
 }
@@ -13,19 +14,15 @@ h1 a {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: rgb(236, 72, 200);
-    font-family: Marcel, sans-serif;
+    color: rgba(55, 14, 14, 0.7);
+    font-family: "Snell Roundhand", cursive;
     font-feature:settingsnormal;
     font-size: 60px;
-    font-weight: bolder;
-    font-style: italic;
     height: 60px;
     letter-spacing: 0.2px;
     line-height: 16.8px;
-    /*font-family: "Snell Roundhand", cursive; */
-
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-right: 10px;
     margin-left: 10px;
 }

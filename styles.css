@@ -117,7 +117,7 @@ header punkter
     color: rgb(0, 56, 168);
 }
 .frontpage {
-    background-image: url("it-women.png");
+    background-image: url("photos/it-women.png");
     background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
     background-position: center; /* centrerer billedet */
     background-repeat: no-repeat; /* undgå gentagelse */

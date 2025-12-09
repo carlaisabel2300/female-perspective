@@ -99,42 +99,135 @@ header punkter
    FORSIDE
    ------------------------------ */
 
+.frontpage1st-section{
+    background-color: floralwhite;
+}
+
 .frontpage-quotebold{
-     background-color: white;
     display: flex;
     justify-content: flex-start;
-    padding-top: 60px;
-    margin-left: 80px;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-bottom: 10px;
     color: rgb(0, 56, 168);
     font-size: 60px;
-
 }
 
 .frontpage-quoteitalic{
-    background-color: white;
     display: flex;
     justify-content: flex-start;
     padding-top: 20px;
-    margin-left: 80px;
+    padding-left: 80px;
     color: rgb(0, 56, 168);
     font-size: 60px;
     font-style: italic;
     font-weight: lighter;
+}
 
+.circle-containers-frontpage {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+.circle-container-frontpage1 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding: 200px;
+    border-radius: 50%;
+    background-color: rgb(248, 230, 237);
+    color: rgb(239, 112, 166);
+    white-space: nowrap;
+    animation-duration: 6s;
 
 }
 
+.circle-container-frontpage1 h4{
+    font-weight: bold;
+    font-size: 120px;
+}
+
+.circle-container-frontpage1 h5{
+    font-style: italic;
+    font-size: 25px;
+ }
+.circle-container-frontpage2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    padding: 200px;
+    border-radius: 50%;
+    background-color: rgb(248, 230, 237);
+    color: rgb(239, 112, 166);
+    white-space: nowrap;
+    animation-duration: 8s;
+}
+
+.circle-container-frontpage2 h4{
+    font-weight: bold;
+    font-size: 120px;
+}
+.circle-container-frontpage2 h5{
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+/* boble-1 */
+.circle-container-frontpage1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    animation: float 6s ease-in-out infinite;
+}
+
+/* boble-2 */
+.circle-container-frontpage2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    animation: float 6s ease-in-out infinite;
+}
+/* Simpel svæve-animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 .tagline {
-    background-color: rgba(217, 221, 255);
-    margin-bottom: 80px;
+    padding-bottom: 5px;
 }
 .tagline-quote {
     display: flex;
     justify-content: flex-start;
     padding-top: 20px;
-    margin-left: 80px;
-    margin-bottom: 80px;
-    color: rgb(0, 56, 168);
+    padding-left: 80px;
+    padding-bottom: 50px;
+    color: rgba(129, 177, 234, 0.76);
     font-size: 30px;
     font-style: italic;
     font-weight: lighter;
@@ -145,40 +238,16 @@ header punkter
     display: flex;
     justify-content: center;
     padding-top: 25px;
+    padding-bottom: 100px;
     color: rgb(0, 56, 168);
 }
-.frontpage {
-    background-image: url("photos/it-women.png");
-    background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
-    background-position: center; /* centrerer billedet */
-    background-repeat: no-repeat; /* undgå gentagelse */
-    width: 100vw;
-    height: 100vh;
-    object-fit: contain;
-    object-position: center;
-}
-.procent-container{
-    display: flex;
-    justify-content: left;
-    align-items: center ;
 
-    padding-top: 100px;
-    padding-bottom: 250px;
-    padding-left: 200px
-}
-.procentW{
-    display: inline-block;
-    font-weight: bold ;
-    color: deeppink;
-    font-size: 150px;
-    padding-right: 20px;
-}
 
-.procentM{
-    display: inline-block;
-    color: gray;
-    font-size: 90px;
-}
+.image_index img{
+    width: 100%;
+    height: auto;
+    display: block; /* prevents bottom gap */
+       }
 
 .small-text-boxes {
     display: flex;

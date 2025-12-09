@@ -333,6 +333,46 @@ INFO
     background-color: rgba(217, 221, 255, 0.5);
 }
 
+/*------------------------------
+INFO CHARTS STYLING
+ -------------------------------*/
+#charts {
+    margin: 20px;
+}
+
+.charts-box {
+    display: flex;
+    justify-content: space-evenly; /* lige afstand mellem charts */
+    align-items: flex-start;         /* top-alignment */
+    gap: 20px;                       /* afstand mellem charts */
+    padding: 20px;
+    border: 2px solid #ccc;          /* “boksen” */
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    flex-wrap: nowrap;               /* holder dem på én linje */
+    overflow-x: auto;                /* scroll hvis for smal skærm */
+}
+
+.chart-wrapper {
+    flex: 0 0 300px;  /* fast bredde pr. chart */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-wrapper canvas {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+#admissionValue{
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+
+
+
 /* ------------------------------
    BIAS CASES
    ------------------------------ */

@@ -270,24 +270,31 @@ INFO
 .biascaseintro {
     display: flex;
     justify-content: flex-start;
+   flex-direction: column;
     padding-top: 20px;
-    margin-left: 80px;
-    margin-bottom: 80px;
+    margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
 .biascaseintro h3 {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     padding-top: 20px;
-    margin-left: 80px;
-    margin-bottom: 80px;
+   margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 20px;
     font-style: italic;
     font-weight: lighter;
 }
 
+.why-are-women-necesary{
+    background-color: white;
+}
+
+.when-women-are-needed{
+    background-color: #ffc9e0;
+}
 /* ------------------------------
    TIMELINE
    ------------------------------ */

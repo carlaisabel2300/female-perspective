@@ -221,6 +221,8 @@ header punkter
 .tagline {
     padding-bottom: 5px;
 }
+
+
 .tagline-quote {
     display: flex;
     justify-content: flex-start;
@@ -292,6 +294,7 @@ INFO
 #info-title {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
@@ -324,37 +327,51 @@ INFO
 
 .circle-container h5 {
     font-style: italic;
+    flex-direction: column;
     margin-top: 10px;
     color: rgba(0, 56, 168, 0.56);
 }
 
+.circle-container5 h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .circle-container div:hover {
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
 
-/*------------------------------
-INFO CHARTS STYLING
- -------------------------------*/
+
+
+
+
+/*------INFO CHARTS STYLING----------*/
+
+
 #charts {
-    margin: 20px;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+
+
 }
 
 .charts-box {
     display: flex;
-    justify-content: space-evenly; /* lige afstand mellem charts */
+    justify-content: space-between; /* lige afstand mellem charts */
     align-items: flex-start;         /* top-alignment */
     gap: 20px;                       /* afstand mellem charts */
-    padding: 20px;
-    border: 2px solid #ccc;          /* “boksen” */
+    padding: 100px;
     border-radius: 12px;
-    background-color: #f9f9f9;
+    background-color: #fcebf9;
     flex-wrap: nowrap;               /* holder dem på én linje */
     overflow-x: auto;                /* scroll hvis for smal skærm */
 }
 
 .chart-wrapper {
-    flex: 0 0 300px;  /* fast bredde pr. chart */
+    flex: 500px;  /* fast bredde pr. chart */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -370,8 +387,9 @@ INFO CHARTS STYLING
     padding-top: 50px;
 }
 
-
-
+#chart-title{
+    flex-direction: column;
+}
 
 /* ------------------------------
    BIAS CASES

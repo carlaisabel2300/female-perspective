@@ -98,6 +98,49 @@ header punkter
 /* ------------------------------
    FORSIDE
    ------------------------------ */
+
+.frontpage-quotebold{
+     background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    margin-left: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 60px;
+
+}
+
+.frontpage-quoteitalic{
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-left: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 60px;
+    font-style: italic;
+    font-weight: lighter;
+
+
+}
+
+.tagline {
+    background-color: rgba(217, 221, 255);
+    margin-bottom: 80px;
+}
+.tagline-quote {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 80px;
+    color: rgb(0, 56, 168);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;
+
+}
+
 .index-title{
     display: flex;
     justify-content: center;
@@ -106,14 +149,14 @@ header punkter
 }
 .frontpage {
     background-image: url("photos/it-women.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 550px; /* ✨ vigtig! */
-    position: relative;
+    background-size: cover; /* tilpasser billedet til skærmens bredde/højde */
+    background-position: center; /* centrerer billedet */
+    background-repeat: no-repeat; /* undgå gentagelse */
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    object-position: center;
 }
-
 .procent-container{
     display: flex;
     justify-content: left;
@@ -140,11 +183,9 @@ header punkter
 .small-text-boxes {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    position: absolute;
-    bottom: -150px; /* ✨ halvt på billede, halvt på hvid baggrund */
-    width: 100%;
-    z-index: 10;
+    gap: 50px; /* mellemrum mellem bokse */
+    padding: 2px 2px; /* mindre padding */
+    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
 }
 
 .info {
@@ -175,10 +216,6 @@ header punkter
     font-size: 30px;
 }
 
-.frontpage-whitespace {
-    height: 250px; /* så der er plads til overlappet */
-    background-color: white;
-}
 
 /*-------------------------------------
 INFO
@@ -195,6 +232,8 @@ INFO
     justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
+
+
 }
 
 .circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5 {
@@ -210,6 +249,8 @@ INFO
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
     white-space: nowrap;
+
+
 }
 
 .circle-container h5 {
@@ -224,27 +265,39 @@ INFO
 }
 
 /* ------------------------------
-   VIDEO - KVINDER I IT BRANCHEN
+   BIAS CASES
    ------------------------------ */
-.women-in-it {
+.biascaseintro {
     display: flex;
-    justify-content: center;
-    background: rgba(217, 221, 255);
-    overflow: hidden;
-    width: 50%;
+    justify-content: flex-start;
+   flex-direction: column;
+    padding-top: 20px;
+    margin: 20px;
+    color: rgb(0, 56, 168);
+    font-size: 15px;
+}
+.biascaseintro h3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+   margin: 20px;
+    color: rgb(0, 56, 168);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
 }
 
-.women-in-it-container{
-    padding: 80px;
-    display: flex;
-    justify-content: center;
-    width: 50%;
+.why-are-women-necesary{
+    background-color: white;
 }
 
+.when-women-are-needed{
+    background-color: #ffc9e0;
+}
 /* ------------------------------
    TIMELINE
    ------------------------------ */
-
 .timeline-wrapper { /** Container that wraps the entire timeline */
     max-width: 1200px; /** Sets maximum width of the timeline wrapper */
     margin: 40px auto; /** Adds vertical margin and centers horizontally */
@@ -543,20 +596,6 @@ INFO
     color: rgb(0, 56, 168);
 }
 
-/*design kort*/
-.map-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-top: 75px;
-}
-
-#map {
-    height: 500px;
-    width: 80%;
-    border-radius: 15px;
-    overflow: hidden;
-}
-
 /* Fælles styling for ALLE square-sektioner */
 .square-cph1,
 .square-cph2,
@@ -711,3 +750,7 @@ hr {
     border: none;
     border-top: 1px solid #e5e5e5;
 }
+
+
+
+

@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 // Query route – JOIN skoler + uddannelser
 app.get("/api/uddannelser", (req, res) => {
-    const sql = `
+    const oversigt = `
         SELECT skole_id, skolenavn, id AS uddannelsesid,
                uddannelsesnavn, mand, kvinde, ialt
         FROM skoler
@@ -33,7 +33,28 @@ app.get("/api/uddannelser", (req, res) => {
     });
 });
 
+app.get("/api/skole/:navn", (req, res) => {
+    const skoleNavn = req.params.navn;
+
+    const sql = `
+        SELECT uddannelsesnavn
+        FROM skoler
+        INNER JOIN uddannelser USING (skole_id)
+        WHERE skolenavn LIKE ?;
+    `;
+
+    db.query(sql, [`%${skoleNavn}%`], (err, results) => {
+        if (err) {
+            console.error("Fejl i SQL-forespørgsel:", err);
+            return res.status(500).json({ error: "Databasefejl" });
+        }
+        res.json(results);
+    });
+});
 // Start serveren
 app.listen(port, () => {
     console.log(`Server kører på http://localhost:${port}`);
 });
+
+
+

@@ -1,17 +1,30 @@
-async function hentUddannelser() {
-    const skoleNavn = "Copenhagen Business School";
-    const response = await fetch(
-        "http://localhost:8080/api/skole/" + encodeURIComponent(skoleNavn)
-    );
-    const data = await response.json();
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".square-wrapper");
 
-    const liste = document.querySelector(".uddannelser-liste");
+    cards.forEach(function (card) {
+        const skoleNavn = card.getAttribute("data-skole");
+        const liste = card.querySelector(".uddannelser-liste");
 
-    data.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item.uddannelsesnavn;
-        liste.appendChild(li);
+        // Hvis boksen ikke har data-skole ELLER ingen <ul>, så spring den over
+        if (!skoleNavn || !liste) {
+            return;
+        }
+
+        const url = "http://localhost:8080/api/skole/" + encodeURIComponent(skoleNavn);
+
+        fetch(url)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                data.forEach(function (item) {
+                    const li = document.createElement("li");
+                    li.textContent = item.uddannelsesnavn;
+                    liste.appendChild(li);
+                });
+            })
+            .catch(function (error) {
+                console.error("Fejl ved hentning af:", skoleNavn, error);
+            });
     });
-}
-
-hentUddannelser();
+});

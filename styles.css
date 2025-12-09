@@ -745,10 +745,14 @@ INFO CHARTS STYLING
 }
 
 .uddannelser-liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 15px;
     padding-left: 18px;   /* gør bullet points synlige */
     text-align: left;     /* venstre-justering er pænest til lister */
     width: 100%;          /* listen fylder hele boksen */
+
 }
 
 /* ------------------------------

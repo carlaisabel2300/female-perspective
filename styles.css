@@ -100,7 +100,7 @@ header punkter
    ------------------------------ */
 
 .frontpage1st-section{
-    background-color: floralwhite;
+    background-color: white;
 }
 
 .frontpage-quotebold{
@@ -254,8 +254,9 @@ header punkter
     justify-content: center;
     gap: 50px; /* mellemrum mellem bokse */
     padding: 2px 2px; /* mindre padding */
-    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
+    margin-top: -120px; /* ✨ rykkér bokse op på billedet */
 }
+
 
 .info {
     padding-top: 20px;

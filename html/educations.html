@@ -7,6 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Female Perspective</title>
     <link rel="stylesheet" href="../styles.css">
+
+    <!-- Leaflet CSS -->
+
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""
+    />
+
+    <!-- Leaflet JS -->
+    <script
+            src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            crossorigin="">
+    </script>
+
 </head>
 <body>
 
@@ -15,10 +31,8 @@
 
     <!-- h1 Female Perspective -->
 
-
-
     <h1 class="logo">
-        <a href="index.html">
+        <a href="forside.html">
             <img src="../photos/fp-logo-blaa.png" alt="Female Perspective logo" class="logo-img">
             <div class="logo-text">
                 Female<br>
@@ -42,7 +56,9 @@
 
 <main>
 
-    <h1>INDSÆT MAP HER</h1>
+    <div class="map-wrapper"> <!--så kan vi style det senere hen-->
+        <div id="map"></div>
+    </div>
 
     <br>
 
@@ -230,8 +246,6 @@
 </main>
 
 
-
-
 <!-- FOOTER -->
 <footer>
     <hr>
@@ -301,5 +315,11 @@
         </div>
 
     </footer>
+
+
+    <script src="../educationData.js"></script>
+    <script src="../app.js"></script>
+
 </body>
+
 </html>

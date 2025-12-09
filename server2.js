@@ -55,3 +55,6 @@ app.get("/api/skole/:navn", (req, res) => {
 app.listen(port, () => {
     console.log(`Server kører på http://localhost:${port}`);
 });
+
+
+

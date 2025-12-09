@@ -684,18 +684,16 @@ INFO
 
 
 .square-wrapper {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-radius: 10%;
     height: 450px;
     width: 350px;
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
-    white-space: nowrap;
+    white-space: normal;
     margin-bottom: 50px;
-
-
 }
 
 .education-logo img {
@@ -703,10 +701,15 @@ INFO
     align-items: center;
     max-width: 300px;
     max-height: 80px;
-    margin-top: 40px;
+    margin: 40px 20px;
 }
 
-
+.uddannelser-liste {
+    font-size: 15px;
+    padding-left: 18px;   /* gør bullet points synlige */
+    text-align: left;     /* venstre-justering er pænest til lister */
+    width: 100%;          /* listen fylder hele boksen */
+}
 
 /* ------------------------------
    FOOTER

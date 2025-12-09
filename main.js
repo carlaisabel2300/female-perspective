@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const skoleNavn = card.getAttribute("data-skole");
         const liste = card.querySelector(".uddannelser-liste");
 
-        // Hvis boksen ikke har data-skole ELLER ingen <ul>, så spring den over
         if (!skoleNavn || !liste) {
             return;
         }
@@ -13,17 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const url = "http://localhost:8080/api/skole/" + encodeURIComponent(skoleNavn);
 
         fetch(url)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (data) {
-                data.forEach(function (item) {
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(item => {
+
+                    let navn = item.uddannelsesnavn;
+
+                    // FINDER DET SIDSTE KOMMA
+                    const sidsteKomma = navn.lastIndexOf(",");
+
+                    // Hvis der findes et komma, fjern alt efter det
+                    if (sidsteKomma !== -1) {
+                        navn = navn.substring(0, sidsteKomma);
+                    }
+
                     const li = document.createElement("li");
-                    li.textContent = item.uddannelsesnavn;
+                    li.textContent = navn.trim();
                     liste.appendChild(li);
                 });
             })
-            .catch(function (error) {
+            .catch(error => {
                 console.error("Fejl ved hentning af:", skoleNavn, error);
             });
     });

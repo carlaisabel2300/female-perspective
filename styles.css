@@ -7,7 +7,7 @@
 }
 
 body {
-background-color: white;
+    background-color: white;
 }
 
 /*-----------------------------------
@@ -99,11 +99,11 @@ header punkter
    FORSIDE
    ------------------------------ */
 
-.frontpage1st-section{
+.frontpage1st-section {
     background-color: floralwhite;
 }
 
-.frontpage-quotebold{
+.frontpage-quotebold {
     display: flex;
     justify-content: flex-start;
     padding-top: 100px;
@@ -113,7 +113,7 @@ header punkter
     font-size: 60px;
 }
 
-.frontpage-quoteitalic{
+.frontpage-quoteitalic {
     display: flex;
     justify-content: flex-start;
     padding-top: 20px;
@@ -149,15 +149,16 @@ header punkter
 
 }
 
-.circle-container-frontpage1 h4{
+.circle-container-frontpage1 h4 {
     font-weight: bold;
     font-size: 120px;
 }
 
-.circle-container-frontpage1 h5{
+.circle-container-frontpage1 h5 {
     font-style: italic;
     font-size: 25px;
- }
+}
+
 .circle-container-frontpage2 {
     flex-direction: column;
     display: flex;
@@ -174,24 +175,26 @@ header punkter
     animation-duration: 8s;
 }
 
-.circle-container-frontpage2 h4{
+.circle-container-frontpage2 h4 {
     font-weight: bold;
     font-size: 120px;
 }
-.circle-container-frontpage2 h5{
+
+.circle-container-frontpage2 h5 {
     font-style: italic;
     font-size: 20px;
     display: flex;
     justify-content: center;
 
 }
+
 /* boble-1 */
-.circle-container-frontpage1{
+.circle-container-frontpage1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     animation: float 6s ease-in-out infinite;
 }
 
@@ -201,9 +204,10 @@ header punkter
     height: 150px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     animation: float 6s ease-in-out infinite;
 }
+
 /* Simpel svæve-animation */
 @keyframes float {
     0% {
@@ -236,7 +240,7 @@ header punkter
 
 }
 
-.index-title{
+.index-title {
     display: flex;
     justify-content: center;
     padding-top: 25px;
@@ -245,11 +249,11 @@ header punkter
 }
 
 
-.image_index img{
+.image_index img {
     width: 100%;
     height: auto;
     display: block; /* prevents bottom gap */
-       }
+}
 
 .small-text-boxes {
     display: flex;
@@ -264,8 +268,9 @@ header punkter
     font-size: 12px;
 
 }
+
 .quote-link {
-    text-decoration: none;  /* ingen blå understregning */
+    text-decoration: none; /* ingen blå understregning */
 }
 
 .quote-link:hover .text-box1 {
@@ -337,13 +342,11 @@ INFO
     justify-content: center;
     align-items: center;
 }
+
 .circle-container div:hover {
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
-
-
-
 
 
 /*------INFO CHARTS STYLING----------*/
@@ -361,17 +364,17 @@ INFO
 .charts-box {
     display: flex;
     justify-content: space-between; /* lige afstand mellem charts */
-    align-items: flex-start;         /* top-alignment */
-    gap: 20px;                       /* afstand mellem charts */
+    align-items: flex-start; /* top-alignment */
+    gap: 20px; /* afstand mellem charts */
     padding: 100px;
     border-radius: 12px;
     background-color: #fcebf9;
-    flex-wrap: nowrap;               /* holder dem på én linje */
-    overflow-x: auto;                /* scroll hvis for smal skærm */
+    flex-wrap: nowrap; /* holder dem på én linje */
+    overflow-x: auto; /* scroll hvis for smal skærm */
 }
 
 .chart-wrapper {
-    flex: 500px;  /* fast bredde pr. chart */
+    flex: 500px; /* fast bredde pr. chart */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -382,12 +385,12 @@ INFO
     height: 200px !important;
 }
 
-#admissionValue{
+#admissionValue {
     font-size: 30px;
     padding-top: 50px;
 }
 
-#chart-title{
+#chart-title {
     flex-direction: column;
 }
 
@@ -397,31 +400,33 @@ INFO
 .biascaseintro {
     display: flex;
     justify-content: flex-start;
-   flex-direction: column;
+    flex-direction: column;
     padding-top: 20px;
     margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
+
 .biascaseintro h3 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     padding-top: 20px;
-   margin: 20px;
+    margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 20px;
     font-style: italic;
     font-weight: lighter;
 }
 
-.why-are-women-necesary{
+.why-are-women-necesary {
     background-color: white;
 }
 
-.when-women-are-needed{
+.when-women-are-needed {
     background-color: #ffc9e0;
 }
+
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -509,7 +514,7 @@ INFO
     border-radius: 10px; /** Rounds corners */
     margin-bottom: 15px; /** Space below each block */
     color: #4B2E2A; /** Text color */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Adds soft shadow */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Adds soft shadow */
 }
 
 .timeline li small { /** Styles <small> text similarly */
@@ -519,7 +524,7 @@ INFO
     border-radius: 10px; /** Rounded corners */
     margin-bottom: 15px; /** Space below */
     color: #4B2E2A; /** Text color */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Soft shadow */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Soft shadow */
 }
 
 /* Title label */
@@ -759,18 +764,18 @@ INFO
     align-items: center;
     max-width: 300px;
     max-height: 80px;
-    margin: 40px 20px;
+    margin: 40px 20px 20px;
 }
 
 .uddannelser-liste {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 15px;
-    padding-left: 18px;   /* gør bullet points synlige */
-    text-align: left;     /* venstre-justering er pænest til lister */
-    width: 100%;          /* listen fylder hele boksen */
-
+    padding-left: 18px;
+    width: 90%;
+}
+.uddannelser-liste li{
+padding-bottom: 3px;
 }
 
 /* ------------------------------
@@ -835,7 +840,7 @@ INFO
     padding: 15px;
     border: none;
     border-radius: 30px;
-    background:  #ffc9e0;
+    background: #ffc9e0;
     color: rgb(0, 56, 168);
     font-weight: bold;
     cursor: pointer;
@@ -871,13 +876,15 @@ INFO
 
 .footer-col p {
     margin-left: 40px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 /* Logo section */
 .footer-logo {
     width: 150px;
     margin-left: 40px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 /* Divider line */
 hr {

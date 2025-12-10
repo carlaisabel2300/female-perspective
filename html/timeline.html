@@ -39,37 +39,75 @@
 <section class="women-in-it-education">
     <h2>Rollemodeller - Kvinder i vores IT brancher</h2>
 
-    <div class="women-in-it-grid">
+    <!-- ØVERSTE RÆKKE: 2 VIDEOER -->
+    <div class="role-row role-row-top">
+        <div class="role-card">
+            <h3>IT-uddannelse</h3>
+            <p class="role-name">Video 1</p>
 
-        <!--
-        controls: Viser play/pause knapper
-        poster: Viser et billede før videoen afspilles
-        -->
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/video1.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
 
-        <video controls poster="../photos/video1-thumbnail.jpg">
-            <source src="../video/video1.mp4" type="video/mp4">
-        </video>
+        <div class="role-card">
+            <h3>IT-uddannelse</h3>
+            <p class="role-name">Video 2</p>
 
-        <video controls poster="../photos/video2-thumbnail.jpg">
-            <source src="../video/video2.mp4" type="video/mp4">
-        </video>
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/video2.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
     </div>
-</section>
 
-<section class="women-in-it-workers">
-    <div>
-        <video controls poster="../photos/video3-thumbnail.jpg">
-            <source src="../video/video3.mp4" type="video/mp4">
-        </video>
+    <!-- NEDERSTE RÆKKE: 3 VIDEOER -->
+    <div class="role-row role-row-bottom">
+        <div class="role-card">
+            <h3>Kvinde i IT-branchen</h3>
+            <p class="role-name">Video 3</p>
 
-        <video controls poster="../photos/rose-thumbnail.jpg">
-            <source src="../video/roseFardig.mp4" type="video/mp4">
-        </video>
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/video3.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
 
-        <video controls poster="../photos/sophie-thumbnail.jpg">
-            <source src="../video/sophieFardig.mp4" type="video/mp4">
-        </video>
+        <div class="role-card">
+            <h3>Kvinde i IT-branchen</h3>
+            <p class="role-name">Rose</p>
 
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/roseFardig.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <h3>Kvinde i IT-branchen</h3>
+            <p class="role-name">Sophie</p>
+
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/sophieFardig.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -162,7 +200,6 @@
     </ul>
 </div>
 
-</body>
 <!-- FOOTER -->
 <footer>
     <hr>
@@ -232,4 +269,6 @@
         </div>
 
     </footer>
+    <script src="../video.js"></script>
+</body>
 </html>

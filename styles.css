@@ -465,13 +465,9 @@ INFO
 }
 
 
-
-
 /* ------------------------------
    TIMELINE
    ------------------------------ */
-
-
 
 .timeline-wrapper { /** Container that wraps the entire timeline */
     max-width: 1200px; /** Sets maximum width of the timeline wrapper */

@@ -16,7 +16,6 @@ background-color: white;
 h1 female perspective + logo
 -----------------------------------*/
 
-
 h1.logo {
     margin: 0;
 }
@@ -829,6 +828,22 @@ INFO
     text-align: left;     /* venstre-justering er pænest til lister */
     width: 100%;          /* listen fylder hele boksen */
 
+}
+
+
+/*design kort*/
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+#map {
+    height: 500px;
+    width: 60%;     /* ← ændret fra 80% til 60% */
+    max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 /* ------------------------------

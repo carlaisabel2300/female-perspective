@@ -3,9 +3,10 @@
     padding: 0;
 
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: elza, sans-serif;
 
     line-height: 1.5; /* 1.5 gange font-størrelsen */
+
 }
 
 body {
@@ -69,8 +70,10 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: rgb(0, 56, 168);
-    font-family: Arial;
+    font-family: elza, sans-serif;
     font-size: 15px;
+    font-weight: 500;
+    height: 46px;
     padding: 4px 10px;
     border-radius: 60px;
 }

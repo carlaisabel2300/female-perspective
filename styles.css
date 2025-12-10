@@ -5,11 +5,11 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 
-    line-height: 1.5; /* 1.5 gange font-størrelsen */
+    line-height: 2; /* 2 gange font-størrelsen */
 }
 
 body {
-background-color: white;
+    background-color: white;
 }
 
 /*-----------------------------------
@@ -101,20 +101,21 @@ header punkter
    FORSIDE
    ------------------------------ */
 
-.frontpage1st-section{
+.frontpage1st-section {
     background-color: white;
 }
 
-.frontpage-quotebold{
+.frontpage-quotebold {
     display: flex;
     justify-content: flex-start;
     padding-top: 100px;
     padding-left: 80px;
     color: rgb(0, 56, 168);
     font-size: 50px;
+    line-height: 1;
 }
 
-.frontpage-quoteitalic{
+.frontpage-quoteitalic {
     display: flex;
     justify-content: flex-start;
     padding-left: 80px;
@@ -123,6 +124,7 @@ header punkter
     font-size: 45px;
     font-style: italic;
     font-weight: lighter;
+    line-height: 1;
 }
 
 .circle-containers-frontpage {
@@ -150,15 +152,16 @@ header punkter
 
 }
 
-.circle-container-frontpage1 h4{
+.circle-container-frontpage1 h4 {
     font-weight: bold;
     font-size: 80px;
 }
 
-.circle-container-frontpage1 h5{
+.circle-container-frontpage1 h5 {
     font-style: italic;
     font-size: 15px;
 }
+
 .circle-container-frontpage2 {
     flex-direction: column;
     display: flex;
@@ -175,24 +178,26 @@ header punkter
     animation-duration: 8s;
 }
 
-.circle-container-frontpage2 h4{
+.circle-container-frontpage2 h4 {
     font-weight: bold;
     font-size: 80px;
 }
-.circle-container-frontpage2 h5{
+
+.circle-container-frontpage2 h5 {
     font-style: italic;
     font-size: 15px;
     display: flex;
     justify-content: center;
 
 }
+
 /* boble-1 */
-.circle-container-frontpage1{
+.circle-container-frontpage1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     animation: float 6s ease-in-out infinite;
 }
 
@@ -202,9 +207,10 @@ header punkter
     height: 150px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     animation: float 6s ease-in-out infinite;
 }
+
 /* Simpel svæve-animation */
 @keyframes float {
     0% {
@@ -237,7 +243,7 @@ header punkter
 
 }
 
-.index-title{
+.index-title {
     display: flex;
     justify-content: center;
     padding-top: 25px;
@@ -265,8 +271,9 @@ header punkter
     font-size: 12px;
 
 }
+
 .quote-link {
-    text-decoration: none;  /* ingen blå understregning */
+    text-decoration: none; /* ingen blå understregning */
 }
 
 .quote-link:hover .text-box1 {
@@ -274,7 +281,7 @@ header punkter
 }
 
 
-.image_index img{
+.image_index img {
     width: 100%;
     height: 80%;
     display: block; /* prevents bottom gap */
@@ -302,10 +309,10 @@ header punkter
     padding-top: 20px;
     color: rgb(0, 56, 168);
 }
+
 .frontpage-whitespace h3 {
     padding-top: 80px;
 }
-
 
 
 /*-------------------------------------
@@ -324,7 +331,6 @@ INFO
     justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
-
 }
 
 .circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5 {
@@ -356,13 +362,11 @@ INFO
     justify-content: center;
     align-items: center;
 }
+
 .circle-container div:hover {
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
-
-
-
 
 
 /*------INFO CHARTS STYLING----------*/
@@ -378,17 +382,17 @@ INFO
 .charts-box {
     display: flex;
     justify-content: space-between; /* lige afstand mellem charts */
-    align-items: flex-start;         /* top-alignment */
-    gap: 20px;                       /* afstand mellem charts */
+    align-items: flex-start; /* top-alignment */
+    gap: 20px; /* afstand mellem charts */
     padding: 100px;
     border-radius: 12px;
     background-color: #fcebf9;
-    flex-wrap: nowrap;               /* holder dem på én linje */
-    overflow-x: auto;                /* scroll hvis for smal skærm */
+    flex-wrap: nowrap; /* holder dem på én linje */
+    overflow-x: auto; /* scroll hvis for smal skærm */
 }
 
 .chart-wrapper {
-    flex: 500px;  /* fast bredde pr. chart */
+    flex: 500px; /* fast bredde pr. chart */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -399,12 +403,12 @@ INFO
     height: 200px !important;
 }
 
-#admissionValue{
+#admissionValue {
     font-size: 30px;
     padding-top: 50px;
 }
 
-#chart-title{
+#chart-title {
     flex-direction: column;
 }
 
@@ -419,6 +423,7 @@ INFO
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
+
 .biascaseintro h3 {
     display: flex;
     justify-content: flex-start;
@@ -430,32 +435,43 @@ INFO
     font-weight: lighter;
 }
 
-.why-are-women-necesary{
+.why-are-women-necesary {
     background-color: white;
+    padding-left: 100px;
+
+
 }
 
-.when-women-are-needed, .when-women-participate{
+.when-women-are-needed, .when-women-participate {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 10px;
-    height: 300px;
-    width: 300px;
-    background-color: #fcebf9;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 400px;
+    width: 400px;
     color: rgb(0, 56, 168);
     white-space: normal;
-    font-size: 10px;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
-
+.when-women-participate {
+    background-color: rgba(166, 241, 160, 0.45);
+}
+.when-women-are-needed {
+    background-color: rgba(246, 155, 155, 0.51);
+}
 /* all case-sections*/
 .biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 100px ;
+    padding: 100px;
     color: rgb(0, 56, 168);
     font-size: 10px;
 }
@@ -467,31 +483,43 @@ INFO
     margin-bottom: 20px;
 }
 
+.women-biascase {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 100px;
+}
+
 
 /*background colors for each case-section*/
 .biascase1 {
     background-color: #fcebf9;
     display: flex;
 }
+
 .biascase2 {
     background-color: white;
 }
+
 .biascase3 {
     background-color: rgba(217, 221, 255);
 }
+
 .biascase4 {
     background-color: white;
 }
+
 .biascase5 {
     background-color: #fcebf9;
 }
+
 .biascase6 {
     background-color: rgba(217, 221, 255);
 }
+
 .biascase7 {
     background-color: white;
 }
-
 
 
 /* ------------------------------
@@ -581,7 +609,7 @@ INFO
     border-radius: 10px; /** Rounds corners */
     margin-bottom: 15px; /** Space below each block */
     color: #4B2E2A; /** Text color */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Adds soft shadow */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Adds soft shadow */
 }
 
 .timeline li small { /** Styles <small> text similarly */
@@ -591,7 +619,7 @@ INFO
     border-radius: 10px; /** Rounded corners */
     margin-bottom: 15px; /** Space below */
     color: #4B2E2A; /** Text color */
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Soft shadow */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Soft shadow */
 }
 
 /* Title label */
@@ -658,7 +686,7 @@ INFO
     top: 0;
     bottom: 0;
     left: 50%;
-    width:5px;
+    width: 5px;
     background: rgba(217, 221, 255);
     transform: translateX(-50%);
 }
@@ -785,7 +813,7 @@ INFO
 
 #map {
     height: 500px;
-    width: 60%;     /* ← ændret fra 80% til 60% */
+    width: 60%; /* ← ændret fra 80% til 60% */
     max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
     border-radius: 15px;
     overflow: hidden;
@@ -852,14 +880,16 @@ INFO
 .uddannelser-liste {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: 15px;
-    padding-left: 18px;   /* gør bullet points synlige */
-    text-align: left;     /* venstre-justering er pænest til lister */
-    width: 100%;          /* listen fylder hele boksen */
-
+    font-size: 12px;
+    padding-left: 18px;
+    width: 90%;
+    color: black;
 }
 
+.uddannelser-liste li{
+    line-height: 1.5;
+    padding: 2px;
+}
 
 /* ------------------------------
    FOOTER
@@ -923,7 +953,7 @@ INFO
     padding: 15px;
     border: none;
     border-radius: 30px;
-    background:  #ffc9e0;
+    background: #ffc9e0;
     color: rgb(0, 56, 168);
     font-weight: bold;
     cursor: pointer;
@@ -959,13 +989,15 @@ INFO
 
 .footer-col p {
     margin-left: 40px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 /* Logo section */
 .footer-logo {
     width: 150px;
     margin-left: 40px;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 /* Divider line */
 hr {

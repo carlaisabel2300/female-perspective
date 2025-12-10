@@ -10,7 +10,6 @@ educationLocations.forEach(institution => {
     L.marker([institution.lat, institution.lng])
         .bindPopup( //note* bindPopup tilføjer en lille infoboks, <strong> gør skolens navn fed, <br> laver linjeskift og city viser byen
             "<strong>" + institution.school + "</strong><br>" +
-            institution.city
-        )
+            institution.city)
         .addTo(map);
 });

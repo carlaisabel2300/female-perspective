@@ -102,7 +102,7 @@ header punkter
    ------------------------------ */
 
 .frontpage1st-section{
-    background-color: floralwhite;
+    background-color: white;
 }
 
 .frontpage-quotebold{
@@ -246,19 +246,19 @@ header punkter
     color: rgb(0, 56, 168);
 }
 
-
-.image_index img{
-    width: 100%;
-    height: auto;
-    display: block; /* prevents bottom gap */
-       }
-
-.small-text-boxes {
+.text-box1, .text-box2, .text-box3 {
+    flex-direction: column;
     display: flex;
     justify-content: center;
-    gap: 50px; /* mellemrum mellem bokse */
-    padding: 2px 2px; /* mindre padding */
-    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    background-color: #fcebf9;
+    color: rgb(0, 56, 168);
+    white-space: normal;
+    font-size: 30px;
 }
 
 .info {
@@ -274,19 +274,36 @@ header punkter
     cursor: pointer;
 }
 
-.text-box1, .text-box2, .text-box3 {
-    flex-direction: column;
+
+.image_index img{
+    width: 100%;
+    height: 80%;
+    display: block; /* prevents bottom gap */
+}
+
+.small-text-boxes {
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 50px; /* mellemrum mellem bokse */
+    margin-top: -400px; /* ✨ rykkér bokse op på billedet */
+}
+
+.frontpage-whitespace {
+    background: white;
+    padding: 150px 200px; /* laver whitespace */
+    text-align: center;  /* centrer ALT tekst automatisk */
+}
+
+.frontpage-whitespace p {
+    display: flex;
     text-align: center;
-    padding: 10px;
-    height: 300px;
-    width: 300px;
-    background-color: #fcebf9;
-    color: rgb(0, 56, 168);
-    white-space: normal;
-    font-size: 30px;
+    padding-top: 20px;
+}
+.frontpage-whitespace h3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 80px;
 }
 
 
@@ -306,7 +323,6 @@ INFO
     justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
-
 
 }
 
@@ -474,9 +490,6 @@ INFO
 .biascase7 {
     background-color: white;
 }
-
-
-
 
 
 

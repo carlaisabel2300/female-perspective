@@ -413,9 +413,8 @@ INFO
 .biascaseintro {
     display: flex;
     justify-content: flex-start;
-   flex-direction: column;
+    flex-direction: column;
     padding-top: 20px;
-    margin-bottom: 60px;
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
@@ -434,34 +433,19 @@ INFO
     background-color: white;
 }
 
-.women-biascase {
+.when-women-are-needed, .when-women-participate{
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 60px;
+    padding: 10px;
     height: 300px;
     width: 300px;
     background-color: #fcebf9;
     color: rgb(0, 56, 168);
     white-space: normal;
-    font-size: 30px;
-}
-
-.when-women-are-needed, .when-women-participate{
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        height: 300px;
-        width: 300px;
-        background-color: #fcebf9;
-        color: rgb(0, 56, 168);
-        white-space: normal;
-        font-size: 10px;
+    font-size: 10px;
 }
 
 

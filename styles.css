@@ -102,7 +102,7 @@ header punkter
    ------------------------------ */
 
 .frontpage1st-section{
-    background-color: white;
+    background-color: floralwhite;
 }
 
 .frontpage-quotebold{
@@ -258,9 +258,8 @@ header punkter
     justify-content: center;
     gap: 50px; /* mellemrum mellem bokse */
     padding: 2px 2px; /* mindre padding */
-    margin-top: -120px; /* ✨ rykkér bokse op på billedet */
+    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
 }
-
 
 .info {
     padding-top: 20px;
@@ -400,7 +399,6 @@ INFO
     justify-content: flex-start;
    flex-direction: column;
     padding-top: 20px;
-    margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
@@ -409,7 +407,6 @@ INFO
     justify-content: flex-start;
     flex-direction: column;
     padding-top: 20px;
-   margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 20px;
     font-style: italic;
@@ -420,9 +417,21 @@ INFO
     background-color: white;
 }
 
-.when-women-are-needed{
-    background-color: #fcebf9;
+.when-women-are-needed, .when-women-participate{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        background-color: #fcebf9;
+        color: rgb(0, 56, 168);
+        white-space: normal;
+        font-size: 10px;
 }
+
 
 /* all case-sections*/
 .biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
@@ -431,44 +440,49 @@ INFO
     flex-direction: column;
     padding: 100px ;
     color: rgb(0, 56, 168);
-    font-size: 20px;
+    font-size: 10px;
 }
 
 /*all titles for bias cases*/
 .allbiascases h3 {
     color: rgb(0, 56, 168);
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
+
 
 /*background colors for each case-section*/
 .biascase1 {
     background-color: #fcebf9;
+    display: flex;
 }
 .biascase2 {
-    background-color: floralwhite;
+    background-color: white;
 }
 .biascase3 {
     background-color: rgba(217, 221, 255);
 }
 .biascase4 {
-    background-color: #fcebf9;
+    background-color: white;
 }
 .biascase5 {
-    background-color: floralwhite;
+    background-color: #fcebf9;
 }
 .biascase6 {
     background-color: rgba(217, 221, 255);
 }
 .biascase7 {
-    background-color: #fcebf9;
+    background-color: white;
 }
+
+
+
+
 
 
 /* ------------------------------
    TIMELINE
    ------------------------------ */
-
 .timeline-wrapper { /** Container that wraps the entire timeline */
     max-width: 1200px; /** Sets maximum width of the timeline wrapper */
     margin: 40px auto; /** Adds vertical margin and centers horizontally */
@@ -809,13 +823,12 @@ INFO
 .uddannelser-liste {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
-    padding-left: 18px;
-    width: 100%;
-}
+    align-items: center;
+    font-size: 15px;
+    padding-left: 18px;   /* gør bullet points synlige */
+    text-align: left;     /* venstre-justering er pænest til lister */
+    width: 100%;          /* listen fylder hele boksen */
 
-.uddanelse-liste ul{
-    line-height: 1.5;
 }
 
 /* ------------------------------

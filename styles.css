@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 
-    line-height: 1.5; /* 1.5 gange font-størrelsen */
+    line-height: 2; /* 2 gange font-størrelsen */
 }
 
 body {
@@ -112,6 +112,7 @@ header punkter
     padding-left: 80px;
     color: rgb(0, 56, 168);
     font-size: 50px;
+    line-height: 1;
 }
 
 .frontpage-quoteitalic {
@@ -123,6 +124,7 @@ header punkter
     font-size: 45px;
     font-style: italic;
     font-weight: lighter;
+    line-height: 1;
 }
 
 .circle-containers-frontpage {
@@ -435,6 +437,9 @@ INFO
 
 .why-are-women-necesary {
     background-color: white;
+    padding-left: 100px;
+
+
 }
 
 .when-women-are-needed, .when-women-participate {
@@ -444,15 +449,23 @@ INFO
     align-items: center;
     text-align: center;
     padding: 10px;
-    height: 300px;
-    width: 300px;
-    background-color: #fcebf9;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 400px;
+    width: 400px;
     color: rgb(0, 56, 168);
     white-space: normal;
-    font-size: 10px;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
-
+.when-women-participate {
+    background-color: rgba(166, 241, 160, 0.45);
+}
+.when-women-are-needed {
+    background-color: rgba(246, 155, 155, 0.51);
+}
 /* all case-sections*/
 .biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
     display: flex;
@@ -468,6 +481,13 @@ INFO
     color: rgb(0, 56, 168);
     font-size: 25px;
     margin-bottom: 20px;
+}
+
+.women-biascase {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 100px;
 }
 
 
@@ -870,7 +890,6 @@ INFO
     line-height: 1.5;
     padding: 2px;
 }
-
 
 /* ------------------------------
    FOOTER

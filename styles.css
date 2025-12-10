@@ -4,6 +4,8 @@
 
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
+
+    line-height: 1.5; /* 1.5 gange font-størrelsen */
 }
 
 body {
@@ -221,6 +223,8 @@ header punkter
 .tagline {
     padding-bottom: 5px;
 }
+
+
 .tagline-quote {
     display: flex;
     justify-content: flex-start;
@@ -293,6 +297,7 @@ INFO
 #info-title {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 25px;
     color: rgb(0, 56, 168);
 }
@@ -325,37 +330,49 @@ INFO
 
 .circle-container h5 {
     font-style: italic;
+    flex-direction: column;
     margin-top: 10px;
     color: rgba(0, 56, 168, 0.56);
 }
 
+.circle-container5 h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .circle-container div:hover {
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
 
-/*------------------------------
-INFO CHARTS STYLING
- -------------------------------*/
+
+
+
+
+/*------INFO CHARTS STYLING----------*/
+
+
 #charts {
-    margin: 20px;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
 }
 
 .charts-box {
     display: flex;
-    justify-content: space-evenly; /* lige afstand mellem charts */
+    justify-content: space-between; /* lige afstand mellem charts */
     align-items: flex-start;         /* top-alignment */
     gap: 20px;                       /* afstand mellem charts */
-    padding: 20px;
-    border: 2px solid #ccc;          /* “boksen” */
+    padding: 100px;
     border-radius: 12px;
-    background-color: #f9f9f9;
+    background-color: #fcebf9;
     flex-wrap: nowrap;               /* holder dem på én linje */
     overflow-x: auto;                /* scroll hvis for smal skærm */
 }
 
 .chart-wrapper {
-    flex: 0 0 300px;  /* fast bredde pr. chart */
+    flex: 500px;  /* fast bredde pr. chart */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,8 +388,9 @@ INFO CHARTS STYLING
     padding-top: 50px;
 }
 
-
-
+#chart-title{
+    flex-direction: column;
+}
 
 /* ------------------------------
    BIAS CASES
@@ -403,8 +421,54 @@ INFO CHARTS STYLING
 }
 
 .when-women-are-needed{
-    background-color: #ffc9e0;
+    background-color: #fcebf9;
 }
+
+/* all case-sections*/
+.biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 100px ;
+    color: rgb(0, 56, 168);
+    font-size: 20px;
+}
+
+/*all titles for bias cases*/
+.allbiascases h3 {
+    color: rgb(0, 56, 168);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*background colors for each case-section*/
+.biascase1 {
+    background-color: #fcebf9;
+}
+.biascase2 {
+    background-color: floralwhite;
+}
+.biascase3 {
+    background-color: rgba(217, 221, 255);
+}
+.biascase4 {
+    background-color: #fcebf9;
+}
+.biascase5 {
+    background-color: floralwhite;
+}
+.biascase6 {
+    background-color: rgba(217, 221, 255);
+}
+.biascase7 {
+    background-color: #fcebf9;
+}
+
+
+
+
+
+
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -725,18 +789,16 @@ INFO CHARTS STYLING
 
 
 .square-wrapper {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-radius: 10%;
     height: 450px;
     width: 350px;
     background-color: rgba(217, 221, 255);
     color: rgb(0, 56, 168);
-    white-space: nowrap;
+    white-space: normal;
     margin-bottom: 50px;
-
-
 }
 
 .education-logo img {
@@ -744,10 +806,19 @@ INFO CHARTS STYLING
     align-items: center;
     max-width: 300px;
     max-height: 80px;
-    margin-top: 40px;
+    margin: 40px 20px;
 }
 
+.uddannelser-liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    padding-left: 18px;   /* gør bullet points synlige */
+    text-align: left;     /* venstre-justering er pænest til lister */
+    width: 100%;          /* listen fylder hele boksen */
 
+}
 
 /* ------------------------------
    FOOTER

@@ -415,6 +415,7 @@ INFO
     justify-content: flex-start;
    flex-direction: column;
     padding-top: 20px;
+    margin-bottom: 60px;
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
@@ -439,7 +440,7 @@ INFO
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 60px;
     height: 300px;
     width: 300px;
     background-color: #fcebf9;

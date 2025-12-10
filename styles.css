@@ -793,7 +793,7 @@ INFO
     align-items: center;
     max-width: 300px;
     max-height: 80px;
-    margin: 40px 20px;
+    margin: 40px 20px 10px;
 }
 
 .uddannelser-liste {
@@ -802,10 +802,12 @@ INFO
     font-size: 12px;
     padding-left: 30px;
     width: 100%;
+    color: black;
 }
 
-.uddanelse-liste li{
-    line-height: 1.5;
+.uddannelser-liste li{
+    margin-bottom: 8px;
+    line-height: 1.6; /* mere vertikal luft i linjen */
 }
 
 

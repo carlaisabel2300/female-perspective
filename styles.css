@@ -844,6 +844,20 @@ INFO
 
 }
 
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+#map {
+    height: 500px;
+    width: 60%;     /* ← ændret fra 80% til 60% */
+    max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
 /* ------------------------------
    FOOTER
    ------------------------------ */

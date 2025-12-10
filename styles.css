@@ -118,6 +118,7 @@ header punkter
     display: flex;
     justify-content: flex-start;
     padding-left: 80px;
+    margin-bottom: 40px;
     color: rgb(0, 56, 168);
     font-size: 45px;
     font-style: italic;

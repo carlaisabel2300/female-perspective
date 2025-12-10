@@ -102,26 +102,24 @@ header punkter
    ------------------------------ */
 
 .frontpage1st-section{
-    background-color: floralwhite;
+    background-color: whitesmoke;
 }
 
 .frontpage-quotebold{
     display: flex;
     justify-content: flex-start;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-left: 80px;
-    padding-bottom: 10px;
     color: rgb(0, 56, 168);
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .frontpage-quoteitalic{
     display: flex;
     justify-content: flex-start;
-    padding-top: 20px;
     padding-left: 80px;
     color: rgb(0, 56, 168);
-    font-size: 60px;
+    font-size: 45px;
     font-style: italic;
     font-weight: lighter;
 }
@@ -131,7 +129,7 @@ header punkter
     justify-content: space-evenly;
     gap: 20px;
     padding-bottom: 50px;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 .circle-container-frontpage1 {
@@ -140,9 +138,9 @@ header punkter
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    padding: 200px;
+    height: 120px;
+    width: 120px;
+    padding: 160px;
     border-radius: 50%;
     background-color: rgb(248, 230, 237);
     color: rgb(239, 112, 166);
@@ -153,12 +151,12 @@ header punkter
 
 .circle-container-frontpage1 h4{
     font-weight: bold;
-    font-size: 120px;
+    font-size: 90px;
 }
 
 .circle-container-frontpage1 h5{
     font-style: italic;
-    font-size: 25px;
+    font-size: 15px;
  }
 .circle-container-frontpage2 {
     flex-direction: column;
@@ -166,9 +164,9 @@ header punkter
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
-    padding: 200px;
+    height: 110px;
+    width: 110px;
+    padding: 160px;
     border-radius: 50%;
     background-color: rgb(248, 230, 237);
     color: rgb(239, 112, 166);
@@ -178,19 +176,21 @@ header punkter
 
 .circle-container-frontpage2 h4{
     font-weight: bold;
-    font-size: 120px;
+    font-size: 90px;
 }
 .circle-container-frontpage2 h5{
     font-style: italic;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
+    align-items: center;
+
 
 }
 /* boble-1 */
 .circle-container-frontpage1{
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
@@ -199,8 +199,8 @@ header punkter
 
 /* boble-2 */
 .circle-container-frontpage2 {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
@@ -258,7 +258,7 @@ header punkter
     justify-content: center;
     gap: 50px; /* mellemrum mellem bokse */
     padding: 2px 2px; /* mindre padding */
-    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
+    margin-top: -400px; /* ✨ rykkér bokse op på billedet */
 }
 
 .info {
@@ -286,10 +286,12 @@ header punkter
     background-color: #fcebf9;
     color: rgb(0, 56, 168);
     white-space: normal;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-
+.frontpage-whitespace{
+    background-color: white;
+}
 /*-------------------------------------
 INFO
  -------------------------------------*/
@@ -394,6 +396,15 @@ INFO
 /* ------------------------------
    BIAS CASES
    ------------------------------ */
+
+.biascasesh2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    color: rgb(0, 56, 168);
+}
+
 .biascaseintro {
     display: flex;
     justify-content: flex-start;
@@ -412,9 +423,29 @@ INFO
     font-style: italic;
     font-weight: lighter;
 }
+.biascaseintro1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    color: rgb(0, 56, 168);
+    font-size: 15px;
+}
 
 .why-are-women-necesary{
     background-color: white;
+}
+.women-biascase{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 50px;
+
+
 }
 
 .when-women-are-needed, .when-women-participate{
@@ -423,8 +454,9 @@ INFO
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 10px;
-        height: 300px;
+        padding: 50px;
+    margin: 50px;
+    height: 300px;
         width: 300px;
         background-color: #fcebf9;
         color: rgb(0, 56, 168);
@@ -440,7 +472,7 @@ INFO
     flex-direction: column;
     padding: 100px ;
     color: rgb(0, 56, 168);
-    font-size: 10px;
+    font-size: 15px;
 }
 
 /*all titles for bias cases*/

@@ -399,7 +399,6 @@ INFO
     justify-content: flex-start;
    flex-direction: column;
     padding-top: 20px;
-    margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
@@ -408,7 +407,6 @@ INFO
     justify-content: flex-start;
     flex-direction: column;
     padding-top: 20px;
-   margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 20px;
     font-style: italic;
@@ -419,9 +417,21 @@ INFO
     background-color: white;
 }
 
-.when-women-are-needed{
-    background-color: #fcebf9;
+.when-women-are-needed, .when-women-participate{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+        background-color: #fcebf9;
+        color: rgb(0, 56, 168);
+        white-space: normal;
+        font-size: 10px;
 }
+
 
 /* all case-sections*/
 .biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
@@ -430,37 +440,39 @@ INFO
     flex-direction: column;
     padding: 100px ;
     color: rgb(0, 56, 168);
-    font-size: 20px;
+    font-size: 10px;
 }
 
 /*all titles for bias cases*/
 .allbiascases h3 {
     color: rgb(0, 56, 168);
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
+
 
 /*background colors for each case-section*/
 .biascase1 {
     background-color: #fcebf9;
+    display: flex;
 }
 .biascase2 {
-    background-color: floralwhite;
+    background-color: white;
 }
 .biascase3 {
     background-color: rgba(217, 221, 255);
 }
 .biascase4 {
-    background-color: #fcebf9;
+    background-color: white;
 }
 .biascase5 {
-    background-color: floralwhite;
+    background-color: #fcebf9;
 }
 .biascase6 {
     background-color: rgba(217, 221, 255);
 }
 .biascase7 {
-    background-color: #fcebf9;
+    background-color: white;
 }
 
 

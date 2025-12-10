@@ -110,18 +110,17 @@ header punkter
     justify-content: flex-start;
     padding-top: 100px;
     padding-left: 80px;
-    padding-bottom: 10px;
     color: rgb(0, 56, 168);
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .frontpage-quoteitalic{
     display: flex;
     justify-content: flex-start;
-    padding-top: 20px;
     padding-left: 80px;
+    margin-bottom: 40px;
     color: rgb(0, 56, 168);
-    font-size: 60px;
+    font-size: 45px;
     font-style: italic;
     font-weight: lighter;
 }
@@ -140,9 +139,9 @@ header punkter
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    padding: 200px;
+    height: 120px;
+    width: 120px;
+    padding: 150px;
     border-radius: 50%;
     background-color: rgb(248, 230, 237);
     color: rgb(239, 112, 166);
@@ -153,22 +152,22 @@ header punkter
 
 .circle-container-frontpage1 h4{
     font-weight: bold;
-    font-size: 120px;
+    font-size: 80px;
 }
 
 .circle-container-frontpage1 h5{
     font-style: italic;
-    font-size: 25px;
- }
+    font-size: 15px;
+}
 .circle-container-frontpage2 {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
-    padding: 200px;
+    height: 120px;
+    width: 120px;
+    padding: 150px;
     border-radius: 50%;
     background-color: rgb(248, 230, 237);
     color: rgb(239, 112, 166);
@@ -178,11 +177,11 @@ header punkter
 
 .circle-container-frontpage2 h4{
     font-weight: bold;
-    font-size: 120px;
+    font-size: 80px;
 }
 .circle-container-frontpage2 h5{
     font-style: italic;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
 
@@ -288,23 +287,25 @@ header punkter
     margin-top: -400px; /* ✨ rykkér bokse op på billedet */
 }
 
+
 .frontpage-whitespace {
-    background: white;
-    padding: 150px 200px; /* laver whitespace */
-    text-align: center;  /* centrer ALT tekst automatisk */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(0, 56, 168);
+    padding: 150px;
+    margin: 80px;
+    width: 1200px;
 }
 
 .frontpage-whitespace p {
-    display: flex;
-    text-align: center;
     padding-top: 20px;
+    color: rgb(0, 56, 168);
 }
 .frontpage-whitespace h3 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
     padding-top: 80px;
 }
+
 
 
 /*-------------------------------------
@@ -774,6 +775,21 @@ INFO
 /* ------------------------------
    UDDANNELSER
    ------------------------------ */
+/* map */
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+#map {
+    height: 500px;
+    width: 60%;     /* ← ændret fra 80% til 60% */
+    max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
+    border-radius: 15px;
+    overflow: hidden;
+}
 
 /* titel */
 #info-title {
@@ -844,19 +860,6 @@ INFO
 
 }
 
-.map-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-top: 75px;
-}
-
-#map {
-    height: 500px;
-    width: 60%;     /* ← ændret fra 80% til 60% */
-    max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
-    border-radius: 15px;
-    overflow: hidden;
-}
 
 /* ------------------------------
    FOOTER

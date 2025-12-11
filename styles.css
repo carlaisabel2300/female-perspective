@@ -4,12 +4,10 @@
 
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-
-    line-height: 2; /* 2 gange font-størrelsen */
 }
 
 body {
-    background-color: white;
+background-color: white;
 }
 
 /*-----------------------------------
@@ -101,30 +99,29 @@ header punkter
    FORSIDE
    ------------------------------ */
 
-.frontpage1st-section {
-    background-color: white;
+.frontpage1st-section{
+    background-color: floralwhite;
 }
 
-.frontpage-quotebold {
+.frontpage-quotebold{
     display: flex;
     justify-content: flex-start;
     padding-top: 100px;
     padding-left: 80px;
+    padding-bottom: 10px;
     color: rgb(0, 56, 168);
-    font-size: 50px;
-    line-height: 1;
+    font-size: 60px;
 }
 
-.frontpage-quoteitalic {
+.frontpage-quoteitalic{
     display: flex;
     justify-content: flex-start;
+    padding-top: 20px;
     padding-left: 80px;
-    margin-bottom: 40px;
     color: rgb(0, 56, 168);
-    font-size: 45px;
+    font-size: 60px;
     font-style: italic;
     font-weight: lighter;
-    line-height: 1;
 }
 
 .circle-containers-frontpage {
@@ -141,53 +138,60 @@ header punkter
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    padding: 150px;
+    height: 150px;
+    width: 150px;
+    padding: 200px;
     border-radius: 50%;
-    background-color: #fcebf9;;
+    background-color: rgb(248, 230, 237);
     color: rgb(239, 112, 166);
     white-space: nowrap;
     animation-duration: 6s;
 
 }
 
-.circle-container-frontpage1 h4,.circle-container-frontpage2 h4  {
+.circle-container-frontpage1 h4{
     font-weight: bold;
-    font-size: 80px;
-    line-height: 1.5;
+    font-size: 120px;
 }
 
-.circle-container-frontpage1 h5, .circle-container-frontpage2 h5{
+.circle-container-frontpage1 h5{
     font-style: italic;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-}
-
+    font-size: 25px;
+ }
 .circle-container-frontpage2 {
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 120px;
-    width: 120px;
-    padding: 150px;
+    height: 130px;
+    width: 130px;
+    padding: 200px;
     border-radius: 50%;
-    background-color: #fcebf9;;
+    background-color: rgb(248, 230, 237);
     color: rgb(239, 112, 166);
     white-space: nowrap;
     animation-duration: 8s;
 }
 
+.circle-container-frontpage2 h4{
+    font-weight: bold;
+    font-size: 120px;
+}
+.circle-container-frontpage2 h5{
+    font-style: italic;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+}
 /* boble-1 */
-.circle-container-frontpage1 {
+.circle-container-frontpage1{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     animation: float 6s ease-in-out infinite;
 }
 
@@ -196,11 +200,10 @@ header punkter
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     animation: float 6s ease-in-out infinite;
 }
-
 /* Simpel svæve-animation */
 @keyframes float {
     0% {
@@ -233,12 +236,40 @@ header punkter
 
 }
 
-.index-title {
+.index-title{
     display: flex;
     justify-content: center;
     padding-top: 25px;
     padding-bottom: 100px;
     color: rgb(0, 56, 168);
+}
+
+
+.image_index img{
+    width: 100%;
+    height: auto;
+    display: block; /* prevents bottom gap */
+       }
+
+.small-text-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* mellemrum mellem bokse */
+    padding: 2px 2px; /* mindre padding */
+    margin-top: -80px; /* ✨ rykkér bokse op på billedet */
+}
+
+.info {
+    padding-top: 20px;
+    font-size: 12px;
+
+}
+.quote-link {
+    text-decoration: none;  /* ingen blå understregning */
+}
+
+.quote-link:hover .text-box1 {
+    cursor: pointer;
 }
 
 .text-box1, .text-box2, .text-box3 {
@@ -253,55 +284,7 @@ header punkter
     background-color: #fcebf9;
     color: rgb(0, 56, 168);
     white-space: normal;
-    font-size: 20px;
-}
-
-.info {
-    padding-top: 20px;
-    font-size: 12px;
-
-}
-
-.quote-link {
-    text-decoration: none; /* ingen blå understregning */
-}
-
-.quote-link:hover .text-box1 {
-    cursor: pointer;
-}
-
-
-.image_index img {
-    width: 100%;
-    height: 80%;
-    display: block; /* prevents bottom gap */
-}
-
-.small-text-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 50px; /* mellemrum mellem bokse */
-    margin-top: -400px; /* ✨ rykkér bokse op på billedet */
-}
-
-
-.frontpage-whitespace {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(0, 56, 168);
-    padding: 150px;
-    margin: 80px;
-    width: 1200px;
-}
-
-.frontpage-whitespace p {
-    padding-top: 20px;
-    color: rgb(0, 56, 168);
-}
-
-.frontpage-whitespace h3 {
-    padding-top: 80px;
+    font-size: 30px;
 }
 
 
@@ -321,6 +304,8 @@ INFO
     justify-content: space-evenly;
     gap: 20px;
     margin: 40px 0;
+
+
 }
 
 .circle-container1, .circle-container2, .circle-container3, .circle-container4, .circle-container5 {
@@ -352,11 +337,13 @@ INFO
     justify-content: center;
     align-items: center;
 }
-
 .circle-container div:hover {
     transform: scale(1.10);
     background-color: rgba(217, 221, 255, 0.5);
 }
+
+
+
 
 
 /*------INFO CHARTS STYLING----------*/
@@ -364,42 +351,53 @@ INFO
 
 #charts {
     margin-top: 50px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-bottom: 100px;
+
+
+}
+.chart-container{
+    display: flex;
+    justify-content: space-between; /* lige afstand mellem charts */
+    align-items: flex-start;         /* top-alignment */
+    gap: 20px;                       /* afstand mellem charts */
+   padding: 20px 100px 100px 100px;
+    border-radius: 12px;
+    flex-wrap: nowrap;               /* holder dem på én linje */
+    overflow-x: auto;
 }
 
 .charts-box {
-    display: flex;
-    justify-content: space-between; /* lige afstand mellem charts */
-    align-items: flex-start; /* top-alignment */
-    gap: 20px; /* afstand mellem charts */
-    padding: 100px;
-    border-radius: 12px;
     background-color: #fcebf9;
-    flex-wrap: nowrap; /* holder dem på én linje */
-    overflow-x: auto; /* scroll hvis for smal skærm */
+    flex-wrap: nowrap;               /* holder dem på én linje */
+    overflow-x: auto;                /* scroll hvis for smal skærm */
 }
 
 .chart-wrapper {
-    flex: 500px; /* fast bredde pr. chart */
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 250px;       /* fast bredde */
+    min-width: 250px;
+    height: 250px;      /* fast højde */
 }
-
 .chart-wrapper canvas {
     width: 100% !important;
-    height: 200px !important;
+    height: 100% !important; /* fylder hele wrapperen */
 }
 
-#admissionValue {
+
+#admissionValue{ /* Teksten med adgangskvotient */
     font-size: 30px;
     padding-top: 50px;
 }
 
-#chart-title {
-    flex-direction: column;
+#chart-title{
+ display: flex;
+    justify-content: center;
+    padding:50px;
+
 }
 
 /* ------------------------------
@@ -408,110 +406,31 @@ INFO
 .biascaseintro {
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+   flex-direction: column;
     padding-top: 20px;
+    margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 15px;
 }
-
 .biascaseintro h3 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     padding-top: 20px;
+   margin: 20px;
     color: rgb(0, 56, 168);
     font-size: 20px;
     font-style: italic;
     font-weight: lighter;
 }
 
-.why-are-women-necesary {
-    background-color: white;
-    padding-left: 100px;
-
-
-}
-
-.when-women-are-needed, .when-women-participate {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    height: 400px;
-    width: 400px;
-    color: rgb(0, 56, 168);
-    white-space: normal;
-    font-size: 20px;
-    font-weight: lighter;
-}
-
-.when-women-participate {
-    background-color: rgba(166, 241, 160, 0.45);
-}
-.when-women-are-needed {
-    background-color: rgba(246, 155, 155, 0.51);
-}
-/* all case-sections*/
-.biascase1, .biascase2, .biascase3, .biascase4, .biascase5, .biascase6, .biascase7 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 100px;
-    color: rgb(0, 56, 168);
-    font-size: 10px;
-}
-
-/*all titles for bias cases*/
-.allbiascases h3 {
-    color: rgb(0, 56, 168);
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.women-biascase {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin: 100px;
-}
-
-
-/*background colors for each case-section*/
-.biascase1 {
-    background-color: #fcebf9;
-    display: flex;
-}
-
-.biascase2 {
+.why-are-women-necesary{
     background-color: white;
 }
 
-.biascase3 {
-    background-color: rgba(217, 221, 255);
+.when-women-are-needed{
+    background-color: #ffc9e0;
 }
-
-.biascase4 {
-    background-color: white;
-}
-
-.biascase5 {
-    background-color: #fcebf9;
-}
-
-.biascase6 {
-    background-color: rgba(217, 221, 255);
-}
-
-.biascase7 {
-    background-color: white;
-}
-
-
 /* ------------------------------
    TIMELINE
    ------------------------------ */
@@ -599,7 +518,7 @@ INFO
     border-radius: 10px; /** Rounds corners */
     margin-bottom: 15px; /** Space below each block */
     color: #4B2E2A; /** Text color */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Adds soft shadow */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Adds soft shadow */
 }
 
 .timeline li small { /** Styles <small> text similarly */
@@ -609,7 +528,7 @@ INFO
     border-radius: 10px; /** Rounded corners */
     margin-bottom: 15px; /** Space below */
     color: #4B2E2A; /** Text color */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08); /** Soft shadow */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08); /** Soft shadow */
 }
 
 /* Title label */
@@ -676,7 +595,7 @@ INFO
     top: 0;
     bottom: 0;
     left: 50%;
-    width: 5px;
+    width: 4px;
     background: rgba(217, 221, 255);
     transform: translateX(-50%);
 }
@@ -793,21 +712,6 @@ INFO
 /* ------------------------------
    UDDANNELSER
    ------------------------------ */
-/* map */
-
-.map-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-top: 75px;
-}
-
-#map {
-    height: 500px;
-    width: 60%; /* ← ændret fra 80% til 60% */
-    max-width: 900px; /* ← optional: så det ikke bliver gigantisk på store skærme */
-    border-radius: 15px;
-    overflow: hidden;
-}
 
 /* titel */
 #info-title {
@@ -868,111 +772,11 @@ INFO
 }
 
 .uddannelser-liste {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    padding-left: 18px;
-    width: 90%;
-    color: black;
+    font-size: 15px;
+    padding-left: 18px;   /* gør bullet points synlige */
+    text-align: left;     /* venstre-justering er pænest til lister */
+    width: 100%;          /* listen fylder hele boksen */
 }
-
-.uddannelser-liste li{
-    line-height: 1.5;
-    padding: 2px;
-}
-
-/* ------------------------------
-   OPSLAGSTAVLE
-   ------------------------------ */
-
-/* ---- OPSLAGSTAVLE ---- */
-
-.messageboard-all{
-
-    margin-bottom: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.messageboard {
-    min-width: 1400px;
-    min-height: 900px;
-    background-image: url("../photos/opslagstavle.png");
-    background-size: cover; /* fylder hele containeren */
-    background-position: center; /* centrerer billedet */
-    background-repeat: no-repeat;
-
-    position: relative;
-}
-
-
-/* ---- POST-ITS ---- */
-.postit {
-    position: absolute;
-    padding: 30px 20px 20px 20px;
-    width: auto;
-    height: auto;
-    min-width: 140px;
-    min-height: 140px;
-    font-size: 12px;
-    font-weight: lighter;
-    font-style: italic;
-    line-height: 2;
-    background-color: #fff98c;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
-    border: 1px solid rgba(0,0,0,0.25);
-    transform-origin: top center;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-/* Hover-effekt */
-.postit:hover {
-    transform: scale(1.07) rotate(0deg);
-    box-shadow: 0 12px 18px rgba(0,0,0,0.4);
-    z-index: 10;
-}
-
-
-/* Farveskift mellem post-its */
-.postit:nth-child(odd)  { background-color: #fff98c; }
-.postit:nth-child(even) { background-color: #ffc9e0; }
-
-
-/* ---- TEGNESTIFTER ---- */
-.pin {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 8px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-    border: 2px solid rgba(255,255,255,0.7);
-}
-
-.red {
-    background-color: #e80404;
-}
-
-
-/* ---- PLACERING AF DE 12 POST-ITS ---- */
-.p1  { top: 13%;  left: 10%; transform: rotate(-4deg); width: 190px; }
-.p2  { top: 15%; left: 30%; transform: rotate(3deg);  width: 250px; }
-.p3  { top: 17%;  left: 55%; transform: rotate(-7deg); width: 250px; }
-.p4  { top: 16%; left: 78%; transform: rotate(5deg);  width: 250px; }
-
-.p5  { top: 38%; left: 8%;  transform: rotate(-2deg); width: 300px; }
-.p6  { top: 41%; left: 32%; transform: rotate(4deg);  width: 250px; }
-.p7  { top: 43%; left: 57%; transform: rotate(-5deg); width: 250px; }
-.p8  { top: 40%; left: 78%; transform: rotate(3deg);  width: 180px; }
-
-.p9  { top: 70%; left: 12%; transform: rotate(-3deg); width: 190px; }
-.p10 { top: 67%; left: 36%; transform: rotate(6deg);  width: 180px; }
-.p11 { top: 73%; left: 55%; transform: rotate(-4deg); width: 170px; }
-.p12 { top: 69%; left: 75%; transform: rotate(2deg);  width: 190px; }
-
-
-
-
 
 /* ------------------------------
    FOOTER
@@ -1036,7 +840,7 @@ INFO
     padding: 15px;
     border: none;
     border-radius: 30px;
-    background: #ffc9e0;
+    background:  #ffc9e0;
     color: rgb(0, 56, 168);
     font-weight: bold;
     cursor: pointer;
@@ -1072,15 +876,13 @@ INFO
 
 .footer-col p {
     margin-left: 40px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px;}
 
 /* Logo section */
 .footer-logo {
     width: 150px;
     margin-left: 40px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px;}
 
 /* Divider line */
 hr {
@@ -1088,100 +890,6 @@ hr {
     border-top: 1px solid #e5e5e5;
 }
 
-
-/*-------------*/
-/*-------------*/
-/*-------------*/
-/*-------------*/
-
-
-/* Sektionen omkring videoerne */
-.women-in-it-education {
-    padding: 60px 0;
-    background-color: #f3f0ff;
-}
-
-.women-in-it-education h2 {
-    max-width: 1100px;
-    margin: 0 auto 40px;
-    font-size: 28px;
-}
-
-/* Rækkerne: øverste med 2 kort, nederste med 3 */
-.role-row {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 40px;
-}
-
-/* Hvert kort */
-.role-card {
-    width: 260px;
-    padding: 10px;
-}
-
-/* Teksten over videoen */
-.role-card h3 {
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-.role-name {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-.role-card h3,
-.role-name {
-    border-bottom: 2px solid #4a57c8;
-    padding-bottom: 4px;
-}
-
-/* Selve video-området */
-.role-video-wrapper {
-    position: relative;
-    margin-top: 12px;
-    cursor: pointer;
-}
-
-/* Videoen fylder kortets bredde */
-.role-video {
-    width: 100%;
-    height: 330px;      /* Ens højde på alle videoer */
-    object-fit: cover; /* Beskær den så den passer pænt */
-    display: block;
-}
-
-/* Stor rund play-knap i midten */
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: none;
-    background: rgba(255, 255, 255, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Trekanten inde i knappen */
-.play-button::before {
-    content: "";
-    border-style: solid;
-    border-width: 12px 0 12px 20px;
-    border-color: transparent transparent transparent #555;
-    margin-left: 4px;
-}
-
-.play-button:hover {
-    background: rgba(255, 255, 255, 1);
-}
 
 
 

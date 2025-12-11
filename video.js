@@ -5,32 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const video = wrapper.querySelector(".role-video");
         const button = wrapper.querySelector(".play-button");
 
+        // Hvis der mangler noget, springer vi bare over
         if (!video || !button) {
             return;
         }
 
-        // Sørg for, at video ikke har kontroller før vi klikker
+        // Skjul kontroller i starten
         video.controls = false;
 
-        function startVideo(event) {
-            if (event) {
-                event.preventDefault();
-                event.stopPropagation();
-            }
-
-            // Tænd kontroller og start videoen
-            video.controls = true;
-            video.play();
-
-            // Fjern vores store play-knap
-            button.style.display = "none";
-
-            // Vi behøver ikke flere klik-handlere efter start
-            wrapper.removeEventListener("click", startVideo);
-            button.removeEventListener("click", startVideo);
+        function startVideo() {
+            video.controls = true;  // vis kontroller
+            video.play();           // start video
+            button.style.display = "none"; // gem den store play-knap
         }
 
-        // Klik både på wrapper og på knappen starter video
+        // Klik på både wrapper og knap gør det samme
         wrapper.addEventListener("click", startVideo);
         button.addEventListener("click", startVideo);
     });

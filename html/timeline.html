@@ -1,7 +1,7 @@
 <!-- HEAD-->
 
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,10 +36,78 @@
     </nav>
 </header>
 
-<section class="women-in-it">
-    <div class="video-container">
-        <h2>Rollemodeller - Kvinder i vores IT brancher</h2>
-        <div class="women-in-it-container"</div>
+<section class="women-in-it-education">
+    <h2>Rollemodeller - Kvinder i vores IT brancher</h2>
+
+    <!-- ØVERSTE RÆKKE: 2 VIDEOER -->
+    <div class="role-row role-row-top">
+        <div class="role-card">
+            <h3>IT-uddannelse</h3>
+            <p class="role-name">Video 1</p>
+
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/video1.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <h3>IT-uddannelse</h3>
+            <p class="role-name">Video 2</p>
+
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/video2.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEDERSTE RÆKKE: 3 VIDEOER -->
+    <div class="role-row role-row-bottom">
+        <div class="role-card">
+            <h3>Kvinde i IT-branchen</h3>
+            <p class="role-name">Video 3</p>
+
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/video3.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <h3>Kvinde i IT-branchen</h3>
+            <p class="role-name">Rose</p>
+
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/roseFardig.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
+
+        <div class="role-card">
+            <h3>Kvinde i IT-branchen</h3>
+            <p class="role-name">Sophie</p>
+
+            <div class="role-video-wrapper">
+                <video class="role-video" preload="metadata">
+                    <source src="../video/sophieFardig.mp4" type="video/mp4">
+                    Din browser understøtter ikke video.
+                </video>
+                <button class="play-button" aria-label="Afspil video"></button>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -53,7 +121,7 @@
 
         <li>
             <div class="title-row">
-                <img class="timeline-img" src="Ada_Lovelace_portrait.jpg" alt="Ada Lovelace">
+                <img class="timeline-img" src="../photos/ada-lovelace.jpeg" alt="Ada Lovelace">
 
                     <span class="title"> Ada Lovelace (1815–1852)</span>
             </div>
@@ -111,6 +179,7 @@
                 Hendes opfindelse løste problemet med netværksloops i Ethernet.
                 Perlmans arbejde er grundlæggende for, hvordan moderne internetinfrastruktur fungerer.
             </p>
+
         </li>
 
         <!--PERSON 5-->
@@ -131,7 +200,6 @@
     </ul>
 </div>
 
-</body>
 <!-- FOOTER -->
 <footer>
     <hr>
@@ -201,4 +269,6 @@
         </div>
 
     </footer>
+    <script src="../video.js"></script>
+</body>
 </html>

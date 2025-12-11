@@ -145,21 +145,24 @@ header punkter
     width: 120px;
     padding: 150px;
     border-radius: 50%;
-    background-color: rgb(248, 230, 237);
+    background-color: #fcebf9;;
     color: rgb(239, 112, 166);
     white-space: nowrap;
     animation-duration: 6s;
 
 }
 
-.circle-container-frontpage1 h4 {
+.circle-container-frontpage1 h4,.circle-container-frontpage2 h4  {
     font-weight: bold;
     font-size: 80px;
+    line-height: 1.5;
 }
 
-.circle-container-frontpage1 h5 {
+.circle-container-frontpage1 h5, .circle-container-frontpage2 h5{
     font-style: italic;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .circle-container-frontpage2 {
@@ -172,23 +175,10 @@ header punkter
     width: 120px;
     padding: 150px;
     border-radius: 50%;
-    background-color: rgb(248, 230, 237);
+    background-color: #fcebf9;;
     color: rgb(239, 112, 166);
     white-space: nowrap;
     animation-duration: 8s;
-}
-
-.circle-container-frontpage2 h4 {
-    font-weight: bold;
-    font-size: 80px;
-}
-
-.circle-container-frontpage2 h5 {
-    font-style: italic;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-
 }
 
 /* boble-1 */
@@ -196,7 +186,7 @@ header punkter
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
+    background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     animation: float 6s ease-in-out infinite;
 }
@@ -206,7 +196,7 @@ header punkter
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgb(255, 201, 224), rgb(248, 230, 237));
+    background: radial-gradient(circle at 30% 30%, #fcebf9, rgb(248, 230, 237));
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     animation: float 6s ease-in-out infinite;
 }
@@ -890,6 +880,99 @@ INFO
     line-height: 1.5;
     padding: 2px;
 }
+
+/* ------------------------------
+   OPSLAGSTAVLE
+   ------------------------------ */
+
+/* ---- OPSLAGSTAVLE ---- */
+
+.messageboard-all{
+
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messageboard {
+    min-width: 1400px;
+    min-height: 900px;
+    background-image: url("../photos/opslagstavle.png");
+    background-size: cover; /* fylder hele containeren */
+    background-position: center; /* centrerer billedet */
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* ---- POST-ITS ---- */
+.postit {
+    position: absolute;
+    padding: 30px 20px 20px 20px;
+    width: auto;
+    height: auto;
+    min-width: 140px;
+    min-height: 140px;
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 2;
+    background-color: #fff98c;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.25);
+    transform-origin: top center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+/* Hover-effekt */
+.postit:hover {
+    transform: scale(1.07) rotate(0deg);
+    box-shadow: 0 12px 18px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+
+/* Farveskift mellem post-its */
+.postit:nth-child(odd)  { background-color: #fff98c; }
+.postit:nth-child(even) { background-color: #ffc9e0; }
+
+
+/* ---- TEGNESTIFTER ---- */
+.pin {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 8px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    border: 2px solid rgba(255,255,255,0.7);
+}
+
+.red {
+    background-color: #e80404;
+}
+
+
+/* ---- PLACERING AF DE 12 POST-ITS ---- */
+.p1  { top: 13%;  left: 10%; transform: rotate(-4deg); width: 190px; }
+.p2  { top: 15%; left: 30%; transform: rotate(3deg);  width: 250px; }
+.p3  { top: 17%;  left: 55%; transform: rotate(-7deg); width: 250px; }
+.p4  { top: 16%; left: 78%; transform: rotate(5deg);  width: 250px; }
+
+.p5  { top: 38%; left: 8%;  transform: rotate(-2deg); width: 300px; }
+.p6  { top: 41%; left: 32%; transform: rotate(4deg);  width: 250px; }
+.p7  { top: 43%; left: 57%; transform: rotate(-5deg); width: 250px; }
+.p8  { top: 40%; left: 78%; transform: rotate(3deg);  width: 180px; }
+
+.p9  { top: 70%; left: 12%; transform: rotate(-3deg); width: 190px; }
+.p10 { top: 67%; left: 36%; transform: rotate(6deg);  width: 180px; }
+.p11 { top: 73%; left: 55%; transform: rotate(-4deg); width: 170px; }
+.p12 { top: 69%; left: 75%; transform: rotate(2deg);  width: 190px; }
+
+
+
+
 
 /* ------------------------------
    FOOTER

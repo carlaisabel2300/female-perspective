@@ -351,44 +351,53 @@ INFO
 
 #charts {
     margin-top: 50px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-bottom: 100px;
 
 
 }
-
-.charts-box {
+.chart-container{
     display: flex;
     justify-content: space-between; /* lige afstand mellem charts */
     align-items: flex-start;         /* top-alignment */
     gap: 20px;                       /* afstand mellem charts */
-    padding: 100px;
+   padding: 20px 100px 100px 100px;
     border-radius: 12px;
+    flex-wrap: nowrap;               /* holder dem på én linje */
+    overflow-x: auto;
+}
+
+.charts-box {
     background-color: #fcebf9;
     flex-wrap: nowrap;               /* holder dem på én linje */
     overflow-x: auto;                /* scroll hvis for smal skærm */
 }
 
 .chart-wrapper {
-    flex: 500px;  /* fast bredde pr. chart */
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 250px;       /* fast bredde */
+    min-width: 250px;
+    height: 250px;      /* fast højde */
 }
-
 .chart-wrapper canvas {
     width: 100% !important;
-    height: 200px !important;
+    height: 100% !important; /* fylder hele wrapperen */
 }
 
-#admissionValue{
+
+#admissionValue{ /* Teksten med adgangskvotient */
     font-size: 30px;
     padding-top: 50px;
 }
 
 #chart-title{
-    flex-direction: column;
+ display: flex;
+    justify-content: center;
+    padding:50px;
+
 }
 
 /* ------------------------------
